@@ -2468,3 +2468,10 @@ body.page {
     border-color: var(--color-accent);
     box-shadow: 0 0 0 4px rgba(229, 9, 20, 0.14);
 }
+
+.alarm-logo:hover,
+.brand:hover .alarm-logo {
+    color: #00E676 !important;
+    filter:
+        drop-shadow(0 0 10px rgba(0, 230, 118, 0.5)) drop-shadow(0 0 22px rgba(0, 230, 118, 0.32)) !important;
+}
