@@ -93,12 +93,36 @@ window.SITE_CONFIG = {
             icon: 'door-open'
         }
     ],
-
     tokens: {
         COMPANY_NAME: 'GUARDER',
         PHONE_DISPLAY: '(888) 555-0148',
         EMAIL: 'hello@guardercompare.com',
         ADDRESS: '1846 Westlake Security Avenue, Austin, TX 78701, USA',
         COMPANY_ID: 'GRD-HS-4827'
+    },
+
+    oldValues: {
+        names: [
+            'GUARDER'
+        ],
+
+        emails: [
+            'hello@guardercompare.com'
+        ],
+
+        phones: [
+            '(888) 555-0148',
+            '+18885550148',
+            '+1 888 555 0148',
+            '888-555-0148'
+        ],
+
+        addresses: [
+            '1846 Westlake Security Avenue, Austin, TX 78701, USA'
+        ],
+
+        companyIds: [
+            'GRD-HS-4827'
+        ]
     }
 };

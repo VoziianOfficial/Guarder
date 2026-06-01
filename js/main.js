@@ -90,6 +90,118 @@
         });
     }
 
+    function replaceHardcodedConfigValues(root = document.body) {
+        if (!root) return;
+
+        const oldValues = CONFIG.oldValues || {};
+
+        const replacements = new Map();
+
+        function addReplacement(oldValue, newValue) {
+            if (!oldValue || !newValue) return;
+            replacements.set(String(oldValue), String(newValue));
+        }
+
+        (oldValues.names || []).forEach((value) => {
+            addReplacement(value, CONFIG.company?.name || '');
+        });
+
+        (oldValues.emails || []).forEach((value) => {
+            addReplacement(value, CONFIG.contact?.email || '');
+        });
+
+        (oldValues.addresses || []).forEach((value) => {
+            addReplacement(value, CONFIG.company?.address || '');
+        });
+
+        (oldValues.companyIds || []).forEach((value) => {
+            addReplacement(value, CONFIG.company?.companyId || '');
+        });
+
+        (oldValues.phones || []).forEach((value) => {
+            const stringValue = String(value);
+
+            if (stringValue.includes('+')) {
+                addReplacement(value, CONFIG.contact?.phoneRaw || '');
+            } else {
+                addReplacement(value, CONFIG.contact?.phoneDisplay || '');
+            }
+        });
+
+        function replaceInString(value) {
+            if (!value || typeof value !== 'string') return value;
+
+            let result = value;
+
+            replacements.forEach((newValue, oldValue) => {
+                result = result.split(oldValue).join(newValue);
+            });
+
+            return result;
+        }
+
+        const walker = document.createTreeWalker(
+            root,
+            NodeFilter.SHOW_TEXT,
+            {
+                acceptNode(node) {
+                    const parent = node.parentElement;
+
+                    if (!parent) return NodeFilter.FILTER_REJECT;
+
+                    const tagName = parent.tagName.toLowerCase();
+
+                    if (['script', 'style', 'noscript'].includes(tagName)) {
+                        return NodeFilter.FILTER_REJECT;
+                    }
+
+                    const text = node.nodeValue || '';
+
+                    for (const oldValue of replacements.keys()) {
+                        if (text.includes(oldValue)) {
+                            return NodeFilter.FILTER_ACCEPT;
+                        }
+                    }
+
+                    return NodeFilter.FILTER_REJECT;
+                }
+            }
+        );
+
+        const textNodes = [];
+
+        while (walker.nextNode()) {
+            textNodes.push(walker.currentNode);
+        }
+
+        textNodes.forEach((node) => {
+            node.nodeValue = replaceInString(node.nodeValue);
+        });
+
+        const attrs = [
+            'href',
+            'title',
+            'alt',
+            'aria-label',
+            'placeholder',
+            'content',
+            'value'
+        ];
+
+        document.querySelectorAll('*').forEach((element) => {
+            attrs.forEach((attr) => {
+                if (!element.hasAttribute(attr)) return;
+
+                const currentValue = element.getAttribute(attr);
+                const nextValue = replaceInString(currentValue);
+
+                if (nextValue !== currentValue) {
+                    element.setAttribute(attr, nextValue);
+                }
+            });
+        });
+    }
+
     function applyConfigText() {
         document.querySelectorAll('[data-config]').forEach((element) => {
             const path = element.getAttribute('data-config');
@@ -196,6 +308,7 @@
         applyCtaText();
         applyServiceLinks();
         replaceTextTokens(document.body);
+        replaceHardcodedConfigValues(document.body);
     }
 
     function initHeaderScrollState() {
