@@ -1813,7 +1813,8 @@ main {
 }
 
 .footer__title {
-    margin-bottom: 18px;
+    margin-top: 20px;
+    margin-bottom: 8px;
     color: var(--color-white);
     font-size: 13px;
     font-weight: 900;
