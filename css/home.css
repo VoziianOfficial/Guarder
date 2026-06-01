@@ -1040,3 +1040,93 @@
         margin-top: 22px;
     }
 }
+/* =========================
+   HOME SECTION SPACING FIX
+========================= */
+
+/* why-compare: верхний padding в половину, нижний оставить как был */
+.why-compare.section {
+    padding-top: 56px !important;
+}
+
+/* home-ecosystem: верхний и нижний padding в половину */
+.home-ecosystem.section {
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+}
+
+/* home-trust: верхний padding в половину, нижний оставить как был */
+.home-trust.section {
+    padding-top: 56px !important;
+}
+
+@media (max-width: 1024px) {
+
+    .why-compare.section,
+    .home-trust.section {
+        padding-top: 42px !important;
+    }
+
+    .home-ecosystem.section {
+        padding-top: 42px !important;
+        padding-bottom: 42px !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .why-compare.section,
+    .home-trust.section {
+        padding-top: 32px !important;
+    }
+
+    .home-ecosystem.section {
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+    }
+}
+
+/* home-services: верхний и нижний padding в половину */
+.home-services.section {
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+}
+
+@media (max-width: 1024px) {
+    .home-services.section {
+        padding-top: 42px !important;
+        padding-bottom: 42px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-services.section {
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+    }
+}
+
+/* message НЕ занимает место, пока текста нет */
+.quote-box__message {
+    display: none;
+    min-height: 0 !important;
+    margin: 0 !important;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+/* появляется только когда JS добавил error/success */
+.quote-box__message.is-error,
+.quote-box__message.is-success {
+    display: block;
+    margin-top: 10px !important;
+}
+
+.quote-box__message.is-error {
+    color: var(--color-accent);
+}
+
+.quote-box__message.is-success {
+    color: #2ecc71;
+}
