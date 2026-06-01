@@ -5,7 +5,7 @@ window.SITE_CONFIG = {
         name: 'GUARDER',
         companyId: 'GRD-HS-4827',
         address: '1846 Westlake Security Avenue, Austin, TX 78701, USA',
-        serviceArea: 'Independent home security provider comparison across selected areas in the United States'
+        serviceArea: 'Independent home security provider comparison site',
     },
 
     contact: {

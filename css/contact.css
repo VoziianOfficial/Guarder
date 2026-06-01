@@ -36,7 +36,7 @@
     grid-template-columns: 42px 1fr;
     align-items: start;
     gap: 14px;
-    min-height: 148px;
+    min-height: 118px;
     padding: 28px;
     border-right: 1px solid var(--color-border-dark);
     overflow: hidden;
@@ -583,4 +583,143 @@
 .custom-checkbox.has-error .custom-checkbox__box {
     border-color: var(--color-accent);
     box-shadow: 0 0 0 4px rgba(229, 9, 20, 0.1);
+}
+
+/* =========================
+   CONTACT FORM COMPACT FIX
+========================= */
+
+.contact-form-card {
+    padding: 28px !important;
+}
+
+.contact-form-card__top {
+    margin-bottom: 22px !important;
+}
+
+.contact-form-card__top p:not(.section-kicker) {
+    margin-top: 12px !important;
+}
+
+.contact-form {
+    display: grid;
+    gap: 16px !important;
+}
+
+.contact-form__grid {
+    gap: 14px !important;
+}
+
+.form-field label {
+    margin-bottom: 6px !important;
+    font-size: 12px !important;
+}
+
+.form-field input,
+.form-field select {
+    min-height: 48px !important;
+    height: 48px !important;
+    padding: 0 14px !important;
+}
+
+.form-field textarea {
+    min-height: 90px !important;
+    padding: 14px !important;
+    resize: vertical;
+}
+
+.custom-checkbox,
+.contact-form__note {
+    display: none !important;
+}
+
+/* Сообщение НЕ занимает место, пока текста нет */
+.contact-form__message {
+    display: none !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+/* Показывается только когда JS добавит статус */
+.contact-form__message.is-error,
+.contact-form__message.is-success {
+    display: block !important;
+    margin-top: 4px !important;
+}
+
+.contact-form__message.is-error {
+    color: var(--color-accent);
+}
+
+.contact-form__message.is-success {
+    color: #2ecc71;
+}
+
+.contact-form__submit {
+    margin-top: 0 !important;
+}
+
+.contact-form__submit .button {
+    min-height: 48px !important;
+    height: 48px !important;
+    padding: 0 20px !important;
+}
+
+@media (max-width: 767px) {
+    .contact-form-card {
+        padding: 22px !important;
+    }
+
+    .contact-form__grid {
+        gap: 12px !important;
+    }
+
+    .form-field input,
+    .form-field select,
+    .contact-form__submit .button {
+        min-height: 46px !important;
+        height: 46px !important;
+    }
+
+    .form-field textarea {
+        min-height: 84px !important;
+    }
+}
+
+/* =========================
+   CONTACT SECTIONS SPACING FIX
+========================= */
+
+.contact-form-section.section,
+.contact-checklist.section,
+.contact-faq.section,
+.after-request.section {
+    padding-top: 52px !important;
+    padding-bottom: 52px !important;
+}
+
+@media (max-width: 1024px) {
+
+    .contact-form-section.section,
+    .contact-checklist.section,
+    .contact-faq.section,
+    .after-request.section {
+        padding-top: 42px !important;
+        padding-bottom: 42px !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .contact-form-section.section,
+    .contact-checklist.section,
+    .contact-faq.section,
+    .after-request.section {
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+    }
 }
