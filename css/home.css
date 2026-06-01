@@ -1717,6 +1717,8 @@
 
 @media (min-width: 1025px) {
     .home-services__arrows {
-        top: 92% !important;
+        top: auto !important;
+        bottom: 6px !important;
+        transform: none !important;
     }
 }
