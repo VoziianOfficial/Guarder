@@ -1,0 +1,665 @@
+/* =========================
+   SERVICE PAGE HERO
+========================= */
+
+.service-hero {
+    min-height: 580px;
+}
+
+.service-hero--alarm-systems {
+    background:
+        radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
+        linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
+        url("../assets/images/alarm-system.jpg") center / cover no-repeat;
+}
+
+.service-hero--security-cameras {
+    background:
+        radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
+        linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
+        url("../assets/images/security-cameras.jpg") center / cover no-repeat;
+}
+
+.service-hero--smart-locks {
+    background:
+        radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
+        linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
+        url("../assets/images/smart-lock.jpg") center / cover no-repeat;
+}
+
+.service-hero--home-monitoring {
+    background:
+        radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
+        linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
+        url("../assets/images/home-monitoring.jpg") center / cover no-repeat;
+}
+
+.service-hero--access-control {
+    background:
+        radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
+        linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
+        url("../assets/images/access-control.jpg") center / cover no-repeat;
+}
+
+.service-hero--video-doorbells {
+    background:
+        radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
+        linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
+        url("../assets/images/video-doorbell.jpg") center / cover no-repeat;
+}
+
+.service-hero .page-hero__content {
+    max-width: 800px;
+}
+
+/* =========================
+   SERVICE INTRO
+========================= */
+
+.service-intro {
+    background:
+        linear-gradient(180deg, var(--color-white), var(--color-light));
+}
+
+.service-intro__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.82fr) minmax(360px, 0.82fr);
+    align-items: center;
+    gap: 56px;
+}
+
+.service-intro__content {
+    display: grid;
+    gap: 22px;
+}
+
+.service-intro__notice {
+    position: relative;
+    padding: 24px 24px 24px 28px;
+    background: var(--color-white);
+    border: 1px solid var(--color-border-light);
+    box-shadow: 0 18px 42px rgba(12, 12, 15, 0.08);
+}
+
+.service-intro__notice::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 22px;
+    bottom: 22px;
+    width: 2px;
+    background: var(--color-accent);
+}
+
+.service-intro__notice h3 {
+    color: var(--color-text-dark);
+    font-size: 22px;
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+    font-weight: 950;
+}
+
+.service-intro__notice p {
+    margin-top: 10px;
+    color: var(--color-text-muted);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.service-intro__media {
+    position: relative;
+    min-height: 450px;
+    overflow: hidden;
+    background:
+        linear-gradient(180deg, rgba(5, 5, 5, 0.08), rgba(5, 5, 5, 0.82)),
+        var(--service-intro-image, url("../assets/images/security-panel.jpg")) center / cover no-repeat;
+    border: 1px solid var(--color-border-light);
+    box-shadow: 0 28px 70px rgba(12, 12, 15, 0.16);
+}
+
+.service-intro__media::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 72% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
+        linear-gradient(180deg, transparent, rgba(5, 5, 5, 0.72));
+}
+
+.service-intro__media-panel {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1;
+    padding: 22px;
+    background: rgba(5, 5, 5, 0.82);
+    border: 1px solid var(--color-border-dark);
+    color: var(--color-white);
+    backdrop-filter: blur(14px);
+}
+
+.service-intro__media-panel svg {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 16px;
+    color: var(--color-accent);
+    stroke-width: 1.6;
+}
+
+.service-intro__media-panel h3 {
+    color: var(--color-white);
+    font-size: 24px;
+    line-height: 1.08;
+    letter-spacing: -0.045em;
+    font-weight: 950;
+}
+
+.service-intro__media-panel p {
+    margin-top: 10px;
+    color: var(--color-text-soft);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.service-intro__media--alarm-systems {
+    --service-intro-image: url("../assets/images/alarm-system.jpg");
+}
+
+.service-intro__media--security-cameras {
+    --service-intro-image: url("../assets/images/security-cameras.jpg");
+}
+
+.service-intro__media--smart-locks {
+    --service-intro-image: url("../assets/images/smart-lock.jpg");
+}
+
+.service-intro__media--home-monitoring {
+    --service-intro-image: url("../assets/images/home-monitoring.jpg");
+}
+
+.service-intro__media--access-control {
+    --service-intro-image: url("../assets/images/access-control.jpg");
+}
+
+.service-intro__media--video-doorbells {
+    --service-intro-image: url("../assets/images/video-doorbell.jpg");
+}
+
+/* =========================
+   SERVICE TABS
+========================= */
+
+.service-tabs-section {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 12% 24%, rgba(229, 9, 20, 0.16), transparent 32%),
+        linear-gradient(135deg, #050505, #0B0B0D);
+    color: var(--color-white);
+}
+
+.service-tabs-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        repeating-linear-gradient(90deg,
+            rgba(255, 255, 255, 0.032) 0,
+            rgba(255, 255, 255, 0.032) 1px,
+            transparent 1px,
+            transparent 86px);
+    pointer-events: none;
+}
+
+.service-tabs {
+    position: relative;
+    z-index: 1;
+}
+
+.service-tabs__layout {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.42fr) minmax(0, 1fr);
+    gap: 34px;
+    align-items: stretch;
+}
+
+.service-tabs__buttons {
+    display: grid;
+    gap: 10px;
+    align-content: start;
+}
+
+.service-tabs__button {
+    position: relative;
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    align-items: center;
+    gap: 12px;
+    min-height: 62px;
+    padding: 0 18px;
+    border: 1px solid var(--color-border-dark);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--color-text-soft);
+    text-align: left;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    overflow: hidden;
+    transition:
+        color var(--transition),
+        background var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.service-tabs__button::after {
+    content: "";
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 0;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    background: var(--color-accent);
+    transition: transform var(--transition);
+}
+
+.service-tabs__button svg {
+    width: 28px;
+    height: 28px;
+    color: var(--color-accent);
+    stroke-width: 1.6;
+    transition:
+        transform var(--transition),
+        filter var(--transition);
+}
+
+.service-tabs__button:hover,
+.service-tabs__button.is-active {
+    color: var(--color-white);
+    border-color: rgba(229, 9, 20, 0.48);
+    background: rgba(229, 9, 20, 0.08);
+}
+
+.service-tabs__button:hover {
+    transform: translateX(4px);
+}
+
+.service-tabs__button.is-active::after,
+.service-tabs__button:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.service-tabs__button:hover svg,
+.service-tabs__button.is-active svg {
+    transform: translateY(-2px);
+    filter: drop-shadow(0 0 14px rgba(229, 9, 20, 0.4));
+}
+
+.service-tabs__panel {
+    min-height: 430px;
+    padding: 34px;
+    background:
+        linear-gradient(180deg, rgba(24, 24, 28, 0.92), rgba(8, 8, 10, 0.94));
+    border: 1px solid var(--color-border-dark);
+    box-shadow: 0 28px 78px rgba(0, 0, 0, 0.34);
+}
+
+.service-tabs__panel[hidden] {
+    display: none;
+}
+
+.service-tabs__panel-top {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 18px;
+    align-items: start;
+    margin-bottom: 28px;
+}
+
+.service-tabs__panel-icon {
+    display: inline-flex;
+    color: var(--color-accent);
+}
+
+.service-tabs__panel-icon svg {
+    width: 54px;
+    height: 54px;
+    stroke-width: 1.45;
+}
+
+.service-tabs__panel h3 {
+    color: var(--color-white);
+    font-size: clamp(26px, 3vw, 40px);
+    line-height: 1.04;
+    letter-spacing: -0.055em;
+    font-weight: 950;
+}
+
+.service-tabs__panel p {
+    max-width: 720px;
+    margin-top: 14px;
+    color: var(--color-text-soft);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.service-tabs__panel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.service-tabs__mini {
+    min-height: 132px;
+    padding: 18px;
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.service-tabs__mini strong {
+    display: block;
+    color: var(--color-white);
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 950;
+}
+
+.service-tabs__mini span {
+    display: block;
+    margin-top: 8px;
+    color: var(--color-text-soft);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* =========================
+   EVALUATION FACTORS
+========================= */
+
+.evaluation-section {
+    background:
+        linear-gradient(180deg, var(--color-white), var(--color-light));
+}
+
+.evaluation-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.evaluation-card {
+    position: relative;
+    min-height: 230px;
+    padding: 22px;
+    background: var(--color-white);
+    border: 1px solid var(--color-border-light);
+    box-shadow: 0 16px 38px rgba(12, 12, 15, 0.08);
+    overflow: hidden;
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.evaluation-card::before {
+    content: "";
+    position: absolute;
+    left: 22px;
+    right: 22px;
+    bottom: 0;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    background: var(--color-accent);
+    transition: transform var(--transition);
+}
+
+.evaluation-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(229, 9, 20, 0.35);
+    box-shadow: 0 24px 54px rgba(12, 12, 15, 0.12);
+}
+
+.evaluation-card:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.evaluation-card svg {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 30px;
+    color: var(--color-accent);
+    stroke-width: 1.55;
+}
+
+.evaluation-card h3 {
+    color: var(--color-text-dark);
+    font-size: 18px;
+    line-height: 1.12;
+    letter-spacing: -0.035em;
+    font-weight: 950;
+}
+
+.evaluation-card p {
+    margin-top: 12px;
+    color: var(--color-text-muted);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* =========================
+   RELATED SERVICES SLIDER
+========================= */
+
+.related-services {
+    background:
+        linear-gradient(180deg, var(--color-light), var(--color-white));
+}
+
+.related-services__top {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: 28px;
+    margin-bottom: 38px;
+}
+
+.related-services__top .section-heading {
+    margin-bottom: 0;
+}
+
+.related-services__arrows {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.related-services .slider__controls {
+    display: none;
+}
+
+.related-services .service-card {
+    min-height: 395px;
+}
+
+/* =========================
+   SERVICE FAQ
+========================= */
+
+.service-faq {
+    background:
+        linear-gradient(180deg, var(--color-white), var(--color-light));
+}
+
+.service-faq__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 48px;
+}
+
+/* =========================
+   SERVICE CTA
+========================= */
+
+.service-final-cta {
+    background:
+        radial-gradient(circle at 12% 28%, rgba(229, 9, 20, 0.22), transparent 34%),
+        linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.72)),
+        url("../assets/images/home-security-cta.jpg") center / cover no-repeat;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1180px) {
+    .evaluation-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .service-intro__layout,
+    .service-tabs__layout,
+    .service-faq__layout {
+        grid-template-columns: 1fr;
+        gap: 38px;
+    }
+
+    .service-intro__media {
+        min-height: 390px;
+    }
+
+    .service-tabs__buttons {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding-bottom: 8px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .service-tabs__button {
+        min-width: 250px;
+        scroll-snap-align: start;
+    }
+
+    .service-tabs__panel-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .evaluation-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .related-services__top {
+        grid-template-columns: 1fr;
+        align-items: start;
+    }
+
+    .related-services__arrows {
+        display: none;
+    }
+
+    .related-services .slider__controls {
+        display: flex;
+    }
+}
+
+@media (max-width: 767px) {
+    .service-hero {
+        min-height: 560px;
+    }
+
+    .service-hero--alarm-systems {
+        background:
+            radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
+            linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
+            url("../assets/images/alarm-system.jpg") center / cover no-repeat;
+    }
+
+    .service-hero--security-cameras {
+        background:
+            radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
+            linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
+            url("../assets/images/security-cameras.jpg") center / cover no-repeat;
+    }
+
+    .service-hero--smart-locks {
+        background:
+            radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
+            linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
+            url("../assets/images/smart-lock.jpg") center / cover no-repeat;
+    }
+
+    .service-hero--home-monitoring {
+        background:
+            radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
+            linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
+            url("../assets/images/home-monitoring.jpg") center / cover no-repeat;
+    }
+
+    .service-hero--access-control {
+        background:
+            radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
+            linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
+            url("../assets/images/access-control.jpg") center / cover no-repeat;
+    }
+
+    .service-hero--video-doorbells {
+        background:
+            radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
+            linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
+            url("../assets/images/video-doorbell.jpg") center / cover no-repeat;
+    }
+
+    .service-intro__media {
+        min-height: 350px;
+    }
+
+    .service-intro__media-panel {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        padding: 18px;
+    }
+
+    .service-tabs__button {
+        min-width: 230px;
+    }
+
+    .service-tabs__panel {
+        min-height: auto;
+        padding: 22px;
+    }
+
+    .service-tabs__panel-top {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .service-tabs__panel-icon svg {
+        width: 44px;
+        height: 44px;
+    }
+
+    .service-tabs__panel-grid,
+    .evaluation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .evaluation-card {
+        min-height: 190px;
+    }
+
+    .related-services .service-card {
+        min-height: 380px;
+    }
+}

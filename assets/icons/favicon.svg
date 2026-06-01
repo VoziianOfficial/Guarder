@@ -1,0 +1,42 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="ringGradient" x1="20" y1="16" x2="108" y2="112" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#E50914"/>
+            <stop offset="100%" stop-color="#9F0610"/>
+        </linearGradient>
+
+        <radialGradient id="buttonGradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(51 43) rotate(52) scale(66 66)">
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.34"/>
+            <stop offset="18%" stop-color="#E50914"/>
+            <stop offset="100%" stop-color="#9F0610"/>
+        </radialGradient>
+
+        <linearGradient id="baseGradient" x1="64" y1="78" x2="64" y2="108" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#1A1A1F"/>
+            <stop offset="100%" stop-color="#050505"/>
+        </linearGradient>
+
+        <filter id="shadow" x="8" y="10" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#E50914" flood-opacity="0.22"/>
+        </filter>
+    </defs>
+
+    <rect width="128" height="128" rx="28" fill="#050505"/>
+
+    <g filter="url(#shadow)">
+        <circle cx="64" cy="64" r="50" fill="#E50914" fill-opacity="0.08"/>
+        <circle cx="64" cy="64" r="47.5" stroke="url(#ringGradient)" stroke-width="5"/>
+
+        <path d="M38 79C38 73.4772 42.4772 69 48 69H80C85.5228 69 90 73.4772 90 79V88C90 94.6274 84.6274 100 78 100H50C43.3726 100 38 94.6274 38 88V79Z" fill="url(#baseGradient)"/>
+
+        <circle cx="64" cy="58" r="28" fill="url(#buttonGradient)"/>
+
+        <ellipse cx="55" cy="48" rx="11" ry="7" fill="white" fill-opacity="0.22"/>
+
+        <circle cx="64" cy="58" r="10" fill="white" fill-opacity="0.16" stroke="white" stroke-opacity="0.65" stroke-width="2.4"/>
+        <circle cx="64" cy="58" r="3.2" fill="white"/>
+
+        <path d="M52.5 46.5C55.5 43.8 59.5 42.2 64 42.2C68.5 42.2 72.5 43.8 75.5 46.5" stroke="white" stroke-opacity="0.75" stroke-width="2.8" stroke-linecap="round"/>
+        <path d="M47 41C51.6 36.8 57.5 34.3 64 34.3C70.5 34.3 76.4 36.8 81 41" stroke="white" stroke-opacity="0.42" stroke-width="2.8" stroke-linecap="round"/>
+    </g>
+</svg>

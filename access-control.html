@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Control | GUARDER Home Security Provider Comparison</title>
+    <meta name="description"
+        content="Compare access control provider options with GUARDER. Review keypad entry, gates, user permissions, entry schedules, access logs, and smart access options.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/service-page.css">
+</head>
+
+<body class="page" data-service="access-control">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="header" data-header>
+        <div class="container">
+            <div class="header__inner">
+                <a class="brand" href="index.html" aria-label="GUARDER homepage">
+                    <span class="alarm-logo" aria-hidden="true">
+                        <svg width="128" height="128" viewBox="0 0 128 128" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="alarm-logo-icon" aria-label="Alarm button logo"
+                            role="img">
+                            <defs>
+                                <linearGradient id="alarmRingAccessHeader" x1="20" y1="16" x2="108" y2="112"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="currentColor" />
+                                    <stop offset="100%" stop-color="currentColor" stop-opacity="0.72" />
+                                </linearGradient>
+
+                                <radialGradient id="alarmButtonAccessHeader" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(51 43) rotate(52) scale(66 66)">
+                                    <stop offset="0%" stop-color="white" stop-opacity="0.34" />
+                                    <stop offset="18%" stop-color="currentColor" stop-opacity="0.96" />
+                                    <stop offset="100%" stop-color="currentColor" stop-opacity="0.82" />
+                                </radialGradient>
+
+                                <linearGradient id="alarmBaseAccessHeader" x1="64" y1="78" x2="64" y2="108"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#1A1A1F" />
+                                    <stop offset="100%" stop-color="#08080A" />
+                                </linearGradient>
+
+                                <filter id="alarmShadowAccessHeader" x="8" y="10" width="112" height="112"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="currentColor"
+                                        flood-opacity="0.18" />
+                                </filter>
+                            </defs>
+
+                            <g filter="url(#alarmShadowAccessHeader)">
+                                <circle cx="64" cy="64" r="50" fill="url(#alarmRingAccessHeader)" fill-opacity="0.08" />
+                                <circle cx="64" cy="64" r="47.5" stroke="url(#alarmRingAccessHeader)"
+                                    stroke-width="5" />
+                                <path
+                                    d="M38 79C38 73.4772 42.4772 69 48 69H80C85.5228 69 90 73.4772 90 79V88C90 94.6274 84.6274 100 78 100H50C43.3726 100 38 94.6274 38 88V79Z"
+                                    fill="url(#alarmBaseAccessHeader)" />
+                                <circle cx="64" cy="58" r="28" fill="url(#alarmButtonAccessHeader)" />
+                                <ellipse cx="55" cy="48" rx="11" ry="7" fill="white" fill-opacity="0.22" />
+                                <circle cx="64" cy="58" r="10" fill="white" fill-opacity="0.16" stroke="white"
+                                    stroke-opacity="0.65" stroke-width="2.4" />
+                                <circle cx="64" cy="58" r="3.2" fill="white" />
+                                <path d="M52.5 46.5C55.5 43.8 59.5 42.2 64 42.2C68.5 42.2 72.5 43.8 75.5 46.5"
+                                    stroke="white" stroke-opacity="0.75" stroke-width="2.8" stroke-linecap="round" />
+                                <path d="M47 41C51.6 36.8 57.5 34.3 64 34.3C70.5 34.3 76.4 36.8 81 41" stroke="white"
+                                    stroke-opacity="0.42" stroke-width="2.8" stroke-linecap="round" />
+                            </g>
+                        </svg>
+                    </span>
+
+                    <span class="brand__name" data-config="company.name">GUARDER</span>
+                </a>
+
+                <nav class="header__nav" aria-label="Primary navigation">
+                    <a class="nav-link" href="index.html" data-nav-link>Home</a>
+
+                    <div class="nav-dropdown" data-dropdown>
+                        <a class="dropdown-toggle" href="services.html" data-dropdown-toggle aria-expanded="false">
+                            Services
+                            <i data-lucide="chevron-down" aria-hidden="true"></i>
+                        </a>
+
+                        <div class="dropdown-panel" data-dropdown-panel>
+                            <div data-service-list="dropdown"></div>
+                        </div>
+                    </div>
+
+                    <a class="nav-link" href="about.html" data-nav-link>About</a>
+                    <a class="nav-link" href="contact.html" data-nav-link>Contact</a>
+                </nav>
+
+                <div class="header__actions">
+                    <a class="header-action" href="#" data-config-href="phone">
+                        <i data-lucide="phone-call" aria-hidden="true"></i>
+                        <span data-config="contact.phoneDisplay">(888) 555-0148</span>
+                    </a>
+
+                    <a class="header-action" href="contact.html">
+                        <i data-lucide="mail" aria-hidden="true"></i>
+                        Contact
+                    </a>
+                </div>
+
+                <a class="header-action header-action--icon mobile-phone" href="#" data-config-href="phone"
+                    aria-label="Call GUARDER">
+                    <i data-lucide="phone-call" aria-hidden="true"></i>
+                    <span data-config="contact.phoneDisplay">(888) 555-0148</span>
+                </a>
+
+                <button class="mobile-toggle" type="button" data-mobile-open aria-label="Open mobile menu"
+                    aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" data-mobile-menu aria-hidden="true">
+        <div class="mobile-menu__panel">
+            <div class="mobile-menu__top">
+                <a class="brand" href="index.html" aria-label="GUARDER homepage">
+                    <span class="alarm-logo" aria-hidden="true">
+                        <svg width="128" height="128" viewBox="0 0 128 128" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="alarm-logo-icon">
+                            <defs>
+                                <linearGradient id="alarmRingAccessMobile" x1="20" y1="16" x2="108" y2="112"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="currentColor" />
+                                    <stop offset="100%" stop-color="currentColor" stop-opacity="0.72" />
+                                </linearGradient>
+
+                                <radialGradient id="alarmButtonAccessMobile" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(51 43) rotate(52) scale(66 66)">
+                                    <stop offset="0%" stop-color="white" stop-opacity="0.34" />
+                                    <stop offset="18%" stop-color="currentColor" stop-opacity="0.96" />
+                                    <stop offset="100%" stop-color="currentColor" stop-opacity="0.82" />
+                                </radialGradient>
+
+                                <linearGradient id="alarmBaseAccessMobile" x1="64" y1="78" x2="64" y2="108"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#1A1A1F" />
+                                    <stop offset="100%" stop-color="#08080A" />
+                                </linearGradient>
+                            </defs>
+
+                            <circle cx="64" cy="64" r="50" fill="url(#alarmRingAccessMobile)" fill-opacity="0.08" />
+                            <circle cx="64" cy="64" r="47.5" stroke="url(#alarmRingAccessMobile)" stroke-width="5" />
+                            <path
+                                d="M38 79C38 73.4772 42.4772 69 48 69H80C85.5228 69 90 73.4772 90 79V88C90 94.6274 84.6274 100 78 100H50C43.3726 100 38 94.6274 38 88V79Z"
+                                fill="url(#alarmBaseAccessMobile)" />
+                            <circle cx="64" cy="58" r="28" fill="url(#alarmButtonAccessMobile)" />
+                            <ellipse cx="55" cy="48" rx="11" ry="7" fill="white" fill-opacity="0.22" />
+                            <circle cx="64" cy="58" r="10" fill="white" fill-opacity="0.16" stroke="white"
+                                stroke-opacity="0.65" stroke-width="2.4" />
+                            <circle cx="64" cy="58" r="3.2" fill="white" />
+                            <path d="M52.5 46.5C55.5 43.8 59.5 42.2 64 42.2C68.5 42.2 72.5 43.8 75.5 46.5"
+                                stroke="white" stroke-opacity="0.75" stroke-width="2.8" stroke-linecap="round" />
+                            <path d="M47 41C51.6 36.8 57.5 34.3 64 34.3C70.5 34.3 76.4 36.8 81 41" stroke="white"
+                                stroke-opacity="0.42" stroke-width="2.8" stroke-linecap="round" />
+                        </svg>
+                    </span>
+
+                    <span class="brand__name" data-config="company.name">GUARDER</span>
+                </a>
+
+                <button class="mobile-menu__close" type="button" data-mobile-close aria-label="Close mobile menu">
+                    <i data-lucide="x" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+                <a href="index.html" data-nav-link>Home</a>
+                <a href="services.html" data-nav-link>Services</a>
+                <a href="about.html" data-nav-link>About</a>
+                <a href="contact.html" data-nav-link>Contact</a>
+            </nav>
+
+            <span class="mobile-menu__label">Security categories</span>
+            <div class="mobile-menu__services" data-service-list="mobile"></div>
+
+            <div class="mobile-menu__contact">
+                <a class="button button--primary" href="#" data-config-href="phone">
+                    <span data-config="contact.phoneButtonText">Compare Security Providers</span>
+                    <i data-lucide="phone-call" aria-hidden="true"></i>
+                </a>
+
+                <a class="button button--secondary-dark" href="#" data-config-href="email">
+                    <span data-config="contact.email">hello@guardercompare.com</span>
+                    <i data-lucide="mail" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main id="main">
+        <section class="page-hero service-hero service-hero--access-control" aria-labelledby="service-hero-title">
+            <div class="container">
+                <div class="page-hero__content">
+                    <p class="section-kicker">Access control</p>
+
+                    <h1 class="page-hero__title" id="service-hero-title">
+                        <span>Compare access control</span>
+                        <span>provider options.</span>
+                    </h1>
+
+                    <div class="page-hero__line" aria-hidden="true"></div>
+
+                    <p class="page-hero__text">
+                        Review keypad entry, gate access, user permissions, entry schedules, access logs, smart access
+                        controls, and installation options before requesting provider quotes.
+                    </p>
+
+                    <div class="page-hero__actions button-group">
+                        <a class="button button--primary" href="contact.html">
+                            Request Access Quotes
+                            <i data-lucide="arrow-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="button button--secondary-dark" href="services.html">
+                            View All Services
+                            <i data-lucide="shield-check" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="button button--secondary-dark" href="#" data-config-href="phone">
+                            <span data-cta="phone">Call to Compare</span>
+                            <i data-lucide="phone-call" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="security-marquee" aria-label="Security service categories">
+            <div class="security-marquee__track">
+                <div class="security-marquee__group">
+                    <a class="security-marquee__item" href="alarm-systems.html"><i data-lucide="bell-ring"
+                            aria-hidden="true"></i><span>Alarm Systems</span></a>
+                    <a class="security-marquee__item" href="security-cameras.html"><i data-lucide="cctv"
+                            aria-hidden="true"></i><span>Security Cameras</span></a>
+                    <a class="security-marquee__item" href="smart-locks.html"><i data-lucide="lock-keyhole"
+                            aria-hidden="true"></i><span>Smart Locks</span></a>
+                    <a class="security-marquee__item" href="video-doorbells.html"><i data-lucide="door-open"
+                            aria-hidden="true"></i><span>Video Doorbells</span></a>
+                    <a class="security-marquee__item" href="home-monitoring.html"><i data-lucide="monitor-dot"
+                            aria-hidden="true"></i><span>24/7 Monitoring</span></a>
+                    <a class="security-marquee__item" href="access-control.html"><i data-lucide="panel-right-open"
+                            aria-hidden="true"></i><span>Access Control</span></a>
+                    <a class="security-marquee__item" href="services.html"><i data-lucide="scan-line"
+                            aria-hidden="true"></i><span>Motion Sensors</span></a>
+                </div>
+
+                <div class="security-marquee__group" aria-hidden="true">
+                    <a class="security-marquee__item" href="alarm-systems.html"><i data-lucide="bell-ring"
+                            aria-hidden="true"></i><span>Alarm Systems</span></a>
+                    <a class="security-marquee__item" href="security-cameras.html"><i data-lucide="cctv"
+                            aria-hidden="true"></i><span>Security Cameras</span></a>
+                    <a class="security-marquee__item" href="smart-locks.html"><i data-lucide="lock-keyhole"
+                            aria-hidden="true"></i><span>Smart Locks</span></a>
+                    <a class="security-marquee__item" href="video-doorbells.html"><i data-lucide="door-open"
+                            aria-hidden="true"></i><span>Video Doorbells</span></a>
+                    <a class="security-marquee__item" href="home-monitoring.html"><i data-lucide="monitor-dot"
+                            aria-hidden="true"></i><span>24/7 Monitoring</span></a>
+                    <a class="security-marquee__item" href="access-control.html"><i data-lucide="panel-right-open"
+                            aria-hidden="true"></i><span>Access Control</span></a>
+                    <a class="security-marquee__item" href="services.html"><i data-lucide="scan-line"
+                            aria-hidden="true"></i><span>Motion Sensors</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-intro section section--light" aria-labelledby="service-intro-title">
+            <div class="container">
+                <div class="service-intro__layout">
+                    <div>
+                        <div class="section-heading">
+                            <p class="section-kicker">Access comparison</p>
+                            <h2 id="service-intro-title">Review access control options before choosing a provider.</h2>
+                            <p>
+                                Access control can support more organized entry management for homes, gates, garages,
+                                shared entrances, small properties, and multi-user households. Compare features before
+                                requesting provider options.
+                            </p>
+                        </div>
+
+                        <div class="service-intro__content">
+                            <article class="service-intro__notice">
+                                <h3>What homeowners compare</h3>
+                                <p>
+                                    Keypads, entry credentials, gate controls, user permissions, schedule rules, access
+                                    logs, mobile controls, alerts, and integration with cameras, locks, or alarms.
+                                </p>
+                            </article>
+
+                            <article class="service-intro__notice">
+                                <h3>Aggregator-safe note</h3>
+                                <p>
+                                    GUARDER does not install access control systems or manage property entry directly.
+                                    GUARDER helps homeowners review independent provider options.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="service-intro__media service-intro__media--access-control">
+                        <div class="service-intro__media-panel">
+                            <i data-lucide="panel-right-open" aria-hidden="true"></i>
+                            <h3>Access control helps organize who can enter and when.</h3>
+                            <p>
+                                Compare entry methods, permissions, logs, gate features, and system compatibility before
+                                contacting providers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-tabs-section section" aria-labelledby="service-tabs-title">
+            <div class="container">
+                <div class="service-tabs" data-service-tabs>
+                    <div class="section-heading section-heading--center">
+                        <p class="section-kicker">Access options</p>
+                        <h2 id="service-tabs-title">Compare access control features and entry management.</h2>
+                        <p>
+                            Use these tabs to review the access control features homeowners commonly compare before
+                            requesting provider options.
+                        </p>
+                    </div>
+
+                    <div class="service-tabs__layout">
+                        <div class="service-tabs__buttons" role="tablist" aria-label="Access control comparison tabs">
+                            <button class="service-tabs__button is-active" type="button" data-service-tab="keypads">
+                                <i data-lucide="keyboard" aria-hidden="true"></i>
+                                Keypad entry
+                            </button>
+
+                            <button class="service-tabs__button" type="button" data-service-tab="gate">
+                                <i data-lucide="door-open" aria-hidden="true"></i>
+                                Gate access
+                            </button>
+
+                            <button class="service-tabs__button" type="button" data-service-tab="users">
+                                <i data-lucide="users" aria-hidden="true"></i>
+                                User permissions
+                            </button>
+
+                            <button class="service-tabs__button" type="button" data-service-tab="schedules">
+                                <i data-lucide="calendar-clock" aria-hidden="true"></i>
+                                Entry schedules
+                            </button>
+
+                            <button class="service-tabs__button" type="button" data-service-tab="logs">
+                                <i data-lucide="file-search" aria-hidden="true"></i>
+                                Access logs
+                            </button>
+
+                            <button class="service-tabs__button" type="button" data-service-tab="integration">
+                                <i data-lucide="plug-zap" aria-hidden="true"></i>
+                                System integration
+                            </button>
+                        </div>
+
+                        <div>
+                            <article class="service-tabs__panel is-active" data-service-panel="keypads">
+                                <div class="service-tabs__panel-top">
+                                    <span class="service-tabs__panel-icon">
+                                        <i data-lucide="keyboard" aria-hidden="true"></i>
+                                    </span>
+                                    <div>
+                                        <h3>Keypad entry</h3>
+                                        <p>
+                                            Keypad entry can support code-based access for doors, garages, gates, or
+                                            shared entry points. Compare code limits, keypad durability, backup access,
+                                            and user management features.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="service-tabs__panel-grid">
+                                    <div class="service-tabs__mini">
+                                        <strong>Code capacity</strong>
+                                        <span>Review how many unique codes can be created.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Outdoor durability</strong>
+                                        <span>Compare keypad weather resistance for exterior use.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Backup access</strong>
+                                        <span>Ask how entry works during battery or power issues.</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="service-tabs__panel" data-service-panel="gate">
+                                <div class="service-tabs__panel-top">
+                                    <span class="service-tabs__panel-icon">
+                                        <i data-lucide="door-open" aria-hidden="true"></i>
+                                    </span>
+                                    <div>
+                                        <h3>Gate access</h3>
+                                        <p>
+                                            Gate access options may include keypads, remotes, mobile controls, visitor
+                                            entry, call boxes, or camera pairing. Compare provider options by property
+                                            layout and gate type.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="service-tabs__panel-grid">
+                                    <div class="service-tabs__mini">
+                                        <strong>Visitor entry</strong>
+                                        <span>Compare guest codes, call boxes, and remote access.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Gate type</strong>
+                                        <span>Review compatibility with swing, slide, or existing gates.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Camera pairing</strong>
+                                        <span>Ask whether gate access can connect with cameras.</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="service-tabs__panel" data-service-panel="users">
+                                <div class="service-tabs__panel-top">
+                                    <span class="service-tabs__panel-icon">
+                                        <i data-lucide="users" aria-hidden="true"></i>
+                                    </span>
+                                    <div>
+                                        <h3>User permissions</h3>
+                                        <p>
+                                            User permissions can help manage family, guests, workers, property managers,
+                                            or service providers. Compare permission levels, admin controls, and
+                                            temporary access options.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="service-tabs__panel-grid">
+                                    <div class="service-tabs__mini">
+                                        <strong>Admin controls</strong>
+                                        <span>Review who can add, edit, or remove users.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Temporary users</strong>
+                                        <span>Compare limited-time and one-time entry permissions.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Role settings</strong>
+                                        <span>Ask whether users can have different access levels.</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="service-tabs__panel" data-service-panel="schedules">
+                                <div class="service-tabs__panel-top">
+                                    <span class="service-tabs__panel-icon">
+                                        <i data-lucide="calendar-clock" aria-hidden="true"></i>
+                                    </span>
+                                    <div>
+                                        <h3>Entry schedules</h3>
+                                        <p>
+                                            Entry schedules can support recurring visitor access, worker access windows,
+                                            household routines, and limited-time permissions. Compare schedule
+                                            flexibility before choosing a package.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="service-tabs__panel-grid">
+                                    <div class="service-tabs__mini">
+                                        <strong>Recurring schedules</strong>
+                                        <span>Useful for weekly service access or routines.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Expiration rules</strong>
+                                        <span>Review automatic code expiration controls.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Time windows</strong>
+                                        <span>Compare day, hour, or custom access windows.</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="service-tabs__panel" data-service-panel="logs">
+                                <div class="service-tabs__panel-top">
+                                    <span class="service-tabs__panel-icon">
+                                        <i data-lucide="file-search" aria-hidden="true"></i>
+                                    </span>
+                                    <div>
+                                        <h3>Access logs</h3>
+                                        <p>
+                                            Access logs may show when doors, gates, or entry points were used and by
+                                            which credential. Compare activity history, app visibility, alert options,
+                                            and data retention.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="service-tabs__panel-grid">
+                                    <div class="service-tabs__mini">
+                                        <strong>Activity history</strong>
+                                        <span>Review what entry events are stored.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>User visibility</strong>
+                                        <span>Compare whether access is tied to specific users.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Alert options</strong>
+                                        <span>Ask about real-time notifications for entry events.</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="service-tabs__panel" data-service-panel="integration">
+                                <div class="service-tabs__panel-top">
+                                    <span class="service-tabs__panel-icon">
+                                        <i data-lucide="plug-zap" aria-hidden="true"></i>
+                                    </span>
+                                    <div>
+                                        <h3>System integration</h3>
+                                        <p>
+                                            Access control may connect with smart locks, alarms, cameras, video
+                                            doorbells, or mobile apps. Compare compatibility before choosing a provider
+                                            package.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="service-tabs__panel-grid">
+                                    <div class="service-tabs__mini">
+                                        <strong>Camera connection</strong>
+                                        <span>Review whether entry events can trigger camera views.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Alarm pairing</strong>
+                                        <span>Ask whether access events can connect with alarms.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>App ecosystem</strong>
+                                        <span>Compare one-app control versus separate systems.</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="evaluation-section section section--light" aria-labelledby="evaluation-title">
+            <div class="container">
+                <div class="section-heading section-heading--center">
+                    <p class="section-kicker">Provider evaluation</p>
+                    <h2 id="evaluation-title">What to compare in access control provider options.</h2>
+                    <p>
+                        Access control packages can differ by entry method, installation type, user controls, app
+                        features, system compatibility, contract terms, and support availability.
+                    </p>
+                </div>
+
+                <div class="evaluation-grid">
+                    <article class="evaluation-card">
+                        <i data-lucide="badge-dollar-sign" aria-hidden="true"></i>
+                        <h3>Pricing</h3>
+                        <p>Compare equipment costs, setup fees, access device count, and possible subscription features.
+                        </p>
+                    </article>
+
+                    <article class="evaluation-card">
+                        <i data-lucide="package-check" aria-hidden="true"></i>
+                        <h3>Equipment</h3>
+                        <p>Review keypads, controllers, readers, gate devices, smart entry hardware, and backup access.
+                        </p>
+                    </article>
+
+                    <article class="evaluation-card">
+                        <i data-lucide="radio-tower" aria-hidden="true"></i>
+                        <h3>Monitoring terms</h3>
+                        <p>Compare whether access events connect with alerts, alarm packages, or monitoring plans.</p>
+                    </article>
+
+                    <article class="evaluation-card">
+                        <i data-lucide="wrench" aria-hidden="true"></i>
+                        <h3>Installation type</h3>
+                        <p>Review wiring needs, gate compatibility, door hardware, controller placement, and setup
+                            approach.</p>
+                    </article>
+
+                    <article class="evaluation-card">
+                        <i data-lucide="file-clock" aria-hidden="true"></i>
+                        <h3>Contract length</h3>
+                        <p>Check agreement terms, software access terms, equipment ownership, and cancellation rules.
+                        </p>
+                    </article>
+
+                    <article class="evaluation-card">
+                        <i data-lucide="smartphone" aria-hidden="true"></i>
+                        <h3>Mobile app</h3>
+                        <p>Compare remote access, entry logs, user permissions, notifications, and schedule controls.
+                        </p>
+                    </article>
+
+                    <article class="evaluation-card">
+                        <i data-lucide="headphones" aria-hidden="true"></i>
+                        <h3>Support</h3>
+                        <p>Review provider support for setup, access issues, user management, hardware, and local
+                            service area.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-services section section--soft" aria-labelledby="related-services-title">
+            <div class="container">
+                <div class="related-services__top">
+                    <div class="section-heading">
+                        <p class="section-kicker">Related services</p>
+                        <h2 id="related-services-title">Compare other home security categories.</h2>
+                        <p>
+                            Access control often connects with smart locks, cameras, alarms, monitoring plans, and video
+                            doorbells.
+                        </p>
+                    </div>
+
+                    <div class="related-services__arrows" aria-label="Slider controls">
+                        <button class="slider__arrow" type="button" data-slider-prev
+                            aria-label="Previous related service">
+                            <i data-lucide="arrow-left" aria-hidden="true"></i>
+                        </button>
+
+                        <button class="slider__arrow" type="button" data-slider-next aria-label="Next related service">
+                            <i data-lucide="arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="slider" data-related-services-slider>
+                    <div class="slider__viewport" data-slider-viewport>
+                        <div class="slider__track" data-slider-track data-related-services-track></div>
+                    </div>
+
+                    <div class="slider__controls">
+                        <button class="slider__arrow" type="button" data-slider-prev
+                            aria-label="Previous related service">
+                            <i data-lucide="arrow-left" aria-hidden="true"></i>
+                        </button>
+
+                        <div class="slider__dots" data-slider-dots aria-label="Slider pagination"></div>
+
+                        <button class="slider__arrow" type="button" data-slider-next aria-label="Next related service">
+                            <i data-lucide="arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta service-final-cta section" aria-labelledby="service-final-title">
+            <div class="container">
+                <div class="final-cta__layout">
+                    <div>
+                        <div class="final-cta__icon" aria-hidden="true">
+                            <i data-lucide="panel-right-open"></i>
+                        </div>
+
+                        <h2 id="service-final-title">Ready to compare access control provider options?</h2>
+                        <p>
+                            Request access control provider options based on your property, ZIP code, entry points, user
+                            needs, and preferred access features.
+                        </p>
+                    </div>
+
+                    <div class="quote-box">
+                        <h3>Start with access control comparison.</h3>
+                        <p>
+                            Compare keypad entry, gate access, user permissions, schedules, access logs, app controls,
+                            and compatibility before choosing who to contact.
+                        </p>
+
+                        <div class="button-group">
+                            <a class="button button--primary" href="contact.html">
+                                Request Provider Options
+                                <i data-lucide="arrow-right" aria-hidden="true"></i>
+                            </a>
+
+                            <a class="button button--secondary-dark" href="#" data-config-href="phone">
+                                Call to Compare
+                                <i data-lucide="phone-call" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                        <div class="quote-box__notes">
+                            <span><i data-lucide="check" aria-hidden="true"></i>Fast</span>
+                            <span><i data-lucide="check" aria-hidden="true"></i>Free</span>
+                            <span><i data-lucide="check" aria-hidden="true"></i>No obligation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="container">
+                <div class="footer__grid">
+                    <div class="footer__col">
+                        <a class="brand brand--footer" href="index.html" aria-label="GUARDER homepage">
+                            <span class="alarm-logo" aria-hidden="true">
+                                <svg width="128" height="128" viewBox="0 0 128 128" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="alarm-logo-icon">
+                                    <defs>
+                                        <linearGradient id="alarmRingAccessFooter" x1="20" y1="16" x2="108" y2="112"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop offset="0%" stop-color="currentColor" />
+                                            <stop offset="100%" stop-color="currentColor" stop-opacity="0.72" />
+                                        </linearGradient>
+
+                                        <radialGradient id="alarmButtonAccessFooter" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(51 43) rotate(52) scale(66 66)">
+                                            <stop offset="0%" stop-color="white" stop-opacity="0.34" />
+                                            <stop offset="18%" stop-color="currentColor" stop-opacity="0.96" />
+                                            <stop offset="100%" stop-color="currentColor" stop-opacity="0.82" />
+                                        </radialGradient>
+
+                                        <linearGradient id="alarmBaseAccessFooter" x1="64" y1="78" x2="64" y2="108"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop offset="0%" stop-color="#1A1A1F" />
+                                            <stop offset="100%" stop-color="#08080A" />
+                                        </linearGradient>
+                                    </defs>
+
+                                    <circle cx="64" cy="64" r="50" fill="url(#alarmRingAccessFooter)"
+                                        fill-opacity="0.08" />
+                                    <circle cx="64" cy="64" r="47.5" stroke="url(#alarmRingAccessFooter)"
+                                        stroke-width="5" />
+                                    <path
+                                        d="M38 79C38 73.4772 42.4772 69 48 69H80C85.5228 69 90 73.4772 90 79V88C90 94.6274 84.6274 100 78 100H50C43.3726 100 38 94.6274 38 88V79Z"
+                                        fill="url(#alarmBaseAccessFooter)" />
+                                    <circle cx="64" cy="58" r="28" fill="url(#alarmButtonAccessFooter)" />
+                                    <ellipse cx="55" cy="48" rx="11" ry="7" fill="white" fill-opacity="0.22" />
+                                    <circle cx="64" cy="58" r="10" fill="white" fill-opacity="0.16" stroke="white"
+                                        stroke-opacity="0.65" stroke-width="2.4" />
+                                    <circle cx="64" cy="58" r="3.2" fill="white" />
+                                    <path d="M52.5 46.5C55.5 43.8 59.5 42.2 64 42.2C68.5 42.2 72.5 43.8 75.5 46.5"
+                                        stroke="white" stroke-opacity="0.75" stroke-width="2.8"
+                                        stroke-linecap="round" />
+                                    <path d="M47 41C51.6 36.8 57.5 34.3 64 34.3C70.5 34.3 76.4 36.8 81 41"
+                                        stroke="white" stroke-opacity="0.42" stroke-width="2.8"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </span>
+
+                            <span class="brand__name" data-config="company.name">GUARDER</span>
+                        </a>
+
+                        <p class="footer__brand-text" data-config="footer.description">
+                            GUARDER is an independent home security comparison platform that helps homeowners explore
+                            local provider options for alarm systems, cameras, smart locks, monitoring, access control,
+                            and video doorbells.
+                        </p>
+
+                        <div class="footer__company">
+                            <span data-config="company.name">GUARDER</span>
+                            <span>Company ID: <span data-config="company.companyId">GRD-HS-4827</span></span>
+                            <span data-config="company.address">1846 Westlake Security Avenue, Austin, TX 78701,
+                                USA</span>
+                        </div>
+                    </div>
+
+                    <div class="footer__col">
+                        <h2 class="footer__title">Navigation</h2>
+
+                        <ul class="footer__links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h2 class="footer__title">Services</h2>
+
+                        <ul class="footer__links" data-service-list="footer">
+                            <li><a href="alarm-systems.html">Alarm Systems</a></li>
+                            <li><a href="security-cameras.html">Security Cameras</a></li>
+                            <li><a href="smart-locks.html">Smart Locks</a></li>
+                            <li><a href="home-monitoring.html">Home Monitoring</a></li>
+                            <li><a href="access-control.html">Access Control</a></li>
+                            <li><a href="video-doorbells.html">Video Doorbells</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h2 class="footer__title">Contact</h2>
+
+                        <div class="footer__contact">
+                            <div class="footer__contact-item">
+                                <i data-lucide="phone-call" aria-hidden="true"></i>
+                                <a href="#" data-config-href="phone" data-config="contact.phoneDisplay">(888)
+                                    555-0148</a>
+                            </div>
+
+                            <div class="footer__contact-item">
+                                <i data-lucide="mail" aria-hidden="true"></i>
+                                <a href="#" data-config-href="email"
+                                    data-config="contact.email">hello@guardercompare.com</a>
+                            </div>
+
+                            <div class="footer__contact-item">
+                                <i data-lucide="clock" aria-hidden="true"></i>
+                                <span data-config="contact.supportHours">Mon–Fri, 8:00 AM–7:00 PM</span>
+                            </div>
+
+                            <div class="footer__contact-item">
+                                <i data-lucide="map-pin" aria-hidden="true"></i>
+                                <span data-config="company.serviceArea">Independent home security provider comparison
+                                    across selected areas in the United States</span>
+                            </div>
+                        </div>
+
+                        <h2 class="footer__title">Legal</h2>
+
+                        <ul class="footer__links">
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                            <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                <p class="footer__disclaimer" data-config="footer.disclaimer">
+                    Disclaimer: This site is a free service to assist homeowners in connecting with local service
+                    providers. All contractors/providers are independent and this site does not warrant or guarantee any
+                    work performed. It is the responsibility of the homeowner to verify that the hired contractor
+                    furnishes the necessary license and insurance required for the work being performed. All persons
+                    depicted in a photo or video are actors or models and not contractors listed on this site.
+                </p>
+
+                <p class="footer__copy">
+                    © <span id="current-year">2026</span> <span data-config="company.name">GUARDER</span>. All rights
+                    reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js" defer></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/service-page.js" defer></script>
+</body>
+
+</html>

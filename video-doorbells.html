@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Doorbells | GUARDER Home Security Provider Comparison</title>
+    <meta name="description"
+        content="Compare video doorbell provider options with GUARDER. Review live view, motion alerts, two-way audio, package detection, storage, wiring, and app access.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/service-page.css">
+</head>
+
+<body class="page" data-service="video-doorbells">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="header" data-header>
+        <div class="container">
+            <div class="header__inner">
+                <a class="brand" href="index.html" aria-label="GUARDER homepage">
+                    <span class="alarm-logo" aria-hidden="true">
+                        <svg width="128" height="128" viewBox="0 0 128 128" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="alarm-logo-icon" aria-label="Alarm button logo"
+                            role="img">
+                            <defs>
+                                <linearGradient id="alarmRingDoorbellHeader" x1="20" y1="16" x2="108" y2="112"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="currentColor" />
+                                    <stop offset="100%" stop-color="currentColor" stop-opacity="0.72" />
+                                </linearGradient>
+
+                                <radialGradient id="alarmButtonDoorbellHeader" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(51 43) rotate(52) scale(66 66)">
+                                    <stop offset="0%" stop-color="white" stop-opacity="0.34" />
+                                    <stop offset="18%" stop-color="currentColor" stop-opacity="0.96" />
+                                    <stop offset="100%" stop-color="currentColor" stop-opacity="0.82" />
+                                </radialGradient>
+
+                                <linearGradient id="alarmBaseDoorbellHeader" x1="64" y1="78" x2="64" y2="108"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#1A1A1F" />
+                                    <stop offset="100%" stop-color="#08080A" />
+                                </linearGradient>
+
+                                <filter id="alarmShadowDoorbellHeader" x="8" y="10" width="112" height="112"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="currentColor"
+                                        flood-opacity="0.18" />
+                                </filter>
+                            </defs>
+
+                            <g filter="url(#alarmShadowDoorbellHeader)">
+                                <circle cx="64" cy="64" r="50" fill="url(#alarmRingDoorbellHeader)"
+                                    fill-opacity="0.08" />
+                                <circle cx="64" cy="64" r="47.5" stroke="url(#alarmRingDoorbellHeader)"
+                                    stroke-width="5" />
+                                <path
+                                    d="M38 79C38 73.4772 42.4772 69 48 69H80C85.5228 69 90 73.4772 90 79V88C90 94.6274 84.6274 100 78 100H50C43.3726 100 38 94.6274 38 88V79Z"
+                                    fill="url(#alarmBaseDoorbellHeader)" />
+                                <circle cx="64" cy="58" r="28" fill="url(#alarmButtonDoorbellHeader)" />
+                                <ellipse cx="55" cy="48" rx="11" ry="7" fill="white" fill-opacity="0.22" />
+                                <circle cx="64" cy="58" r="10" fill="white" fill-opacity="0.16" stroke="white"
+                                    stroke-opacity="0.65" stroke-width="2.4" />
+                                <circle cx="64" cy="58" r="3.2" fill="white" />
+                                <path d="M52.5 46.5C55.5 43.8 59.5 42.2 64 42.2C68.5 42.2 72.5 43.8 75.5 46.5"
+                                    stroke="white" stroke-opacity="0.75" stroke-width="2.8" stroke-linecap="round" />
+                                <path d="M47 41C51.6 36.8 57.5 34.3 64 34.3C70.5 34.3 76.4 36.8 81 41" stroke="white"
+                                    stroke-opacity="0.42" stroke-width="2.8" stroke-linecap="round" />
+                            </g>
+                        </svg>
+                    </span>
+
+                    <span class="brand__name" data-config="company.name">GUARDER</span>
+                </a>
+
+                <nav class="header__nav" aria-label="Primary navigation">
+                    <a class="nav-link" href="index.html" data-nav-link>Home</a>
+
+                    <div class="nav-dropdown" data-dropdown>
+                        <a class="dropdown-toggle" href="services.html" data-dropdown-toggle aria-expanded="false">
+                            Services
+                            <i data-lucide="chevron-down" aria-hidden="true"></i>
+                        </a>
+
+                        <div class="dropdown-panel" data-dropdown-panel>
+                            <div data-service-list="dropdown"></div>
+                        </div>
+                    </div>
+
+                    <a class="nav-link" href="about.html" data-nav-link>About</a>
+                    <a class="nav-link" href="contact.html" data-nav-link>Contact</a>
+                </nav>
+
+                <div class="header__actions">
+                    <a class="header-action" href="#" data-config-href="phone">
+                        <i data-lucide="phone-call" aria-hidden="true"></i>
+                        <span data-config="contact.phoneDisplay">(888) 555-0148</span>
+                    </a>
+
+                    <a class="header-action" href="contact.html">
+                        <i data-lucide="mail" aria-hidden="true"></i>
+                        Contact
+                    </a>
+                </div>
+
+                <a class="header-action header-action--icon mobile-phone" href="#" data-config-href="phone"
+                    aria-label="Call GUARDER">
+                    <i data-lucide="phone-call" aria-hidden="true"></i>
+                    <span data-config="contact.phoneDisplay">(888) 555-0148</span>
+                </a>
+
+                <button class="mobile-toggle" type="button" data-mobile-open aria-label="Open mobile menu"
+                    aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" data-mobile-menu aria-hidden="true">
+        <div class="mobile-menu__panel">
+            <div class="mobile-menu__top">
+                <a class="brand" href="index.html" aria-label="GUARDER homepage">
+                    <span class="alarm-logo" aria-hidden="true">
+                        <svg width="128" height="128" viewBox="0 0 128 128" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="alarm-logo-icon">
+                            <defs>
+                                <linearGradient id="alarmRingDoorbellMobile" x1="20" y1="16" x2="108" y2="112"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="currentColor" />
+                                    <stop offset="100%" stop-color="currentColor" stop-opacity="0.72" />
+                                </linearGradient>
+
+                                <radialGradient id="alarmButtonDoorbellMobile" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(51 43) rotate(52) scale(66 66)">
+                                    <stop offset="0%" stop-color="white" stop-opacity="0.34" />
+                                    <stop offset="18%" stop-color="currentColor" stop-opacity="0.96" />
+                                    <stop offset="100%" stop-color="currentColor" stop-opacity="0.82" />
+                                </radialGradient>
+
+                                <linearGradient id="alarmBaseDoorbellMobile" x1="64" y1="78" x2="64" y2="108"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#1A1A1F" />
+                                    <stop offset="100%" stop-color="#08080A" />
+                                </linearGradient>
+                            </defs>
+
+                            <circle cx="64" cy="64" r="50" fill="url(#alarmRingDoorbellMobile)" fill-opacity="0.08" />
+                            <circle cx="64" cy="64" r="47.5" stroke="url(#alarmRingDoorbellMobile)" stroke-width="5" />
+                            <path
+                                d="M38 79C38 73.4772 42.4772 69 48 69H80C85.5228 69 90 73.4772 90 79V88C90 94.6274 84.6274 100 78 100H50C43.3726 100 38 94.6274 38 88V79Z"
+                                fill="url(#alarmBaseDoorbellMobile)" />
+                            <circle cx="64" cy="58" r="28" fill="url(#alarmButtonDoorbellMobile)" />
+                            <ellipse cx="55" cy="48" rx="11" ry="7" fill="white" fill-opacity="0.22" />
+                            <circle cx="64" cy="58" r="10" fill="white" fill-opacity="0.16" stroke="white"
+                                stroke-opacity="0.65" stroke-width="2.4" />
+                            <circle cx="64" cy="58" r="3.2" fill="white" />
+                            <path d="M52.5 46.5C55.5 43.8 59.5 42.2 64 42.2C68.5 42.2 72.5 43.8 75.5 46.5"
+                                stroke="white" stroke-opacity="0.75" stroke-width="2.8" stroke-linecap="round" />
+                            <path d="M47 41C51.6 36.8 57.5 34.3 64 34.3C70.5 34.3 76.4 36.8 81 41" stroke="white"
+                                stroke-opacity="0.42" stroke-width="2.8" stroke-linecap="round" />
+                        </svg>
+                    </span>
+
+                    <span class="brand__name" data-config="company.name">GUARDER</span>
+                </a>
+
+                <button class="mobile-menu__close" type="button" data-mobile-close aria-label="Close mobile menu">
+                    <i data-lucide="x" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+                <a href="index.html" data-nav-link>Home</a>
+                <a href="services.html" data-nav-link>Services</a>
+                <a href="about.html" data-nav-link>About</a>
+                <a href="contact.html" data-nav-link>Contact</a>
+            </nav>
+
+            <span class="mobile-menu__label">Security categories</span>
+            <div class="mobile-menu__services" data-service-list="mobile"></div>
+
+            <div class="mobile-menu__contact">
+                <a class="button button--primary" href="#" data-config-href="phone">
+                    <span data-config="contact.phoneButtonText">Compare Security Providers</span>
+                    <i data-lucide="phone-call" aria-hidden="true"></i>
+                </a>
+
+                <a class="button button--secondary-dark" href="#" data-config-href="email">
+                    <span data-config="contact.email">hello@guardercompare.com</span>
+                    <i data-lucide="mail" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main id="main">
+        <section class="page-hero service-hero service-hero--video-doorbells" aria-labelledby="service-hero-title">
+            <div class="container">
+                <div class="page-hero__content">
+                    <p class="section-kicker">Video doorbells</p>
+
+                    <h1 class="page-hero__title" id="service-hero-title">
+                        <span>Compare video doorbell</span>
+                        <span>provider options.</span>
+                    </h1>
+
+                    <div class="page-hero__line" aria-hidden="true"></div>
+
+                    <p class="page-hero__text">
+                        Review live view, motion alerts, two-way audio, package detection, storage options, wiring
+                        needs, and app access before requesting provider quotes.
+                    </p>
+
+                    <div class="page-hero__actions button-group">
+                        <a class="button button--primary" href="contact.html">
+                            Request Doorbell Quotes
+                            <i data-lucide="arrow-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="button button--secondary-dark" href="services.html">
+                            View All Services
+                            <i data-lucide="shield-check" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="button button--secondary-dark" href="#" data-config-href="phone">
+                            <span data-cta="phone">Call to Compare</span>
+                            <i data-lucide="phone-call" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="security-marquee" aria-label="Security service categories">
+            <div class="security-marquee__track">
+                <div class="security-marquee__group">
+                    <a class="security-marquee__item" href="alarm-systems.html"><i data-lucide="bell-ring"
+                            aria-hidden="true"></i><span>Alarm Systems</span></a>
+                    <a class="security-marquee__item" href="security-cameras.html"><i data-lucide="cctv"
+                            aria-hidden="true"></i><span>Security Cameras</span></a>
+                    <a class="security-marquee__item" href="smart-locks.html"><i data-lucide="lock-keyhole"
+                            aria-hidden="true"></i><span>Smart Locks</span></a>
+                    <a class="security-marquee__item" href="video-doorbells.html"><i data-lucide="door-open"
+                            aria-hidden="true"></i><span>Video Doorbells</span></a>
+                    <a class="security-marquee__item" href="home-monitoring.html"><i data-lucide="monitor-dot"
+                            aria-hidden="true"></i><span>24/7 Monitoring</span></a>
+                    <a class="security-marquee__item" href="access-control.html"><i data-lucide="panel-right-open"
+                            aria-hidden="true"></i><span>Access Control</span></a>
+                    <a class="security-marquee__item" href="services.html"><i data-lucide="scan-line"
+                            aria-hidden="true"></i><span>Motion Sensors</span></a>
+                </div>
+
+                <div class="security-marquee__group" aria-hidden="true">
+                    <a class="security-marquee__item" href="alarm-systems.html"><i data-lucide="bell-ring"
+                            aria-hidden="true"></i><span>Alarm Systems</span></a>
+                    <a class="security-marquee__item" href="security-cameras.html"><i data-lucide="cctv"
+                            aria-hidden="true"></i><span>Security Cameras</span></a>
+                    <a class="security-marquee__item" href="smart-locks.html"><i data-lucide="lock-keyhole"
+                            aria-hidden="true"></i><span>Smart Locks</span></a>
+                    <a class="security-marquee__item" href="video-doorbells.html"><i data-lucide="door-open"
+                            aria-hidden="true"></i><span>Video Doorbells</span></a>
+                    <a class="security-marquee__item" href="home-monitoring.html"><i data-lucide="monitor-dot"
+                            aria-hidden="true"></i><span>24/7 Monitoring</span></a>
+                    <a class="security-marquee__item" href="access-control.html"><i data-lucide="panel-right-open"
+                            aria-hidden="true"></i><span>Access Control</span></a>
+                    <a class="security-marquee__item" href="services.html"><i data-lucide="scan-line"
+                            aria-hidden="true"></i><span>Motion Sensors</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-intro section section--light" aria-labelledby="service-intro-title">
+            <div class="container">
+                <div class="service-intro__layout">
+                    <div>
+                        <div class="section-heading">
+                            <p class="section-kicker">Doorbell comparison</p>
+                            <h2 id="service-intro-title">Review video doorbell features before choosing a provider.</h2>
+                            <p>
+                                Video doorbell options can vary by camera quality, porch coverage, two-way audio, motion
+                                detection, package alerts, storage plans, power source, and app controls.
+                            </p>
+                        </div>
+
+                        <div class="service-intro__content">
+                            <article class="service-intro__notice">
+                                <h3>What homeowners compare</h3>
+                                <p>
+                                    Live view, motion zones, package detection, two-way audio, night vision, wired or
+                                    battery power, cloud storage, local storage, visitor alerts, and smart lock
+                                    compatibility.
+                                </p>
+                            </article>
+
+                            <article class="service-intro__notice">
+                                <h3>Aggregator-safe note</h3>
+                                <p>
+                                    GUARDER does not install video doorbells or monitor doorbell footage directly.
+                                    GUARDER helps homeowners review independent provider options before choosing who to
+                                    contact.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="service-intro__media service-intro__media--video-doorbells">
+                        <div class="service-intro__media-panel">
+                            <i data-lucide="door-open" aria-hidden="true"></i>
+                            <h3>Video doorbells add visibility at the front door.</h3>
+                            <p>
+                                Compare alerts, audio, storage, power options, and app access before contacting
+                                providers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-tabs-section section" aria-labelledby="service-tabs-title">
+            <div class="container">
+                <div class="service-tabs" data-service-tabs>
+                    <div class="section-heading section-heading--center">
+                        <p class="section-kicker">Doorbell options</p>
+                        <h2 id="service-tabs-title">Compare video doorbell features and package details.</h2>
+                        <p>
+                            Use these tabs to review common doorbell camera differences before requesting provider
+                            options.
+                        </p>
+                    </div>
+
+                    <div class="service-tabs__layout">
+                        <div class="service-tabs__buttons" role="tablist" aria-label="Video doorbell comparison tabs">
+                            <button class="service-tabs__button is-active" type="button" data-service-tab="live-view">
+                                <i data-lucide="eye" aria-hidden="true"></i>
+                                Live view
+                            </button>
+
+                            <button class="service-tabs__button" type="button" data-service-tab="motion">
+                                <i data-lucide="scan-line" aria-hidden="true"></i>
+                                Motion alerts
+                            </button>
+
+                            <button class="service-tabs__button" type="button" data-service-tab="audio">
+                                <i data-lucide="message-circle" aria-hidden="true"></i>
+                                Two-way audio
+                            </button>
+
+                            <button class="service-tabs__button" type="button" data-service-tab="packages">
+                                <i data-lucide="package-check" aria-hidden="true"></i>
+                                Package detection
+                            </button>
+
+                            <button class="service-tabs__button" type="button" data-service-tab="power">
+                                <i data-lucide="battery-charging" aria-hidden="true"></i>
+                                Power options
+                            </button>
+
+                            <button class="service-tabs__button" type="button" data-service-tab="storage">
+                                <i data-lucide="database" aria-hidden="true"></i>
+                                Storage and app
+                            </button>
+                        </div>
+
+                        <div>
+                            <article class="service-tabs__panel is-active" data-service-panel="live-view">
+                                <div class="service-tabs__panel-top">
+                                    <span class="service-tabs__panel-icon">
+                                        <i data-lucide="eye" aria-hidden="true"></i>
+                                    </span>
+                                    <div>
+                                        <h3>Live view access</h3>
+                                        <p>
+                                            Live view lets homeowners check the front door from a mobile app. Compare
+                                            video quality, loading speed, viewing angle, privacy controls, and whether
+                                            live access is included in the base package.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="service-tabs__panel-grid">
+                                    <div class="service-tabs__mini">
+                                        <strong>Viewing angle</strong>
+                                        <span>Compare porch, walkway, and package visibility.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Video quality</strong>
+                                        <span>Review resolution, frame rate, and low-light view.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Privacy controls</strong>
+                                        <span>Ask about user access and camera settings.</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="service-tabs__panel" data-service-panel="motion">
+                                <div class="service-tabs__panel-top">
+                                    <span class="service-tabs__panel-icon">
+                                        <i data-lucide="scan-line" aria-hidden="true"></i>
+                                    </span>
+                                    <div>
+                                        <h3>Motion alerts</h3>
+                                        <p>
+                                            Motion alerts can notify homeowners about activity near the door. Compare
+                                            alert zones, sensitivity, people detection, vehicle detection, and
+                                            notification controls.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="service-tabs__panel-grid">
+                                    <div class="service-tabs__mini">
+                                        <strong>Activity zones</strong>
+                                        <span>Reduce alerts from sidewalks or streets.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Detection type</strong>
+                                        <span>Compare basic motion and smart detection.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Alert settings</strong>
+                                        <span>Review who receives notifications and when.</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="service-tabs__panel" data-service-panel="audio">
+                                <div class="service-tabs__panel-top">
+                                    <span class="service-tabs__panel-icon">
+                                        <i data-lucide="message-circle" aria-hidden="true"></i>
+                                    </span>
+                                    <div>
+                                        <h3>Two-way audio</h3>
+                                        <p>
+                                            Two-way audio can help homeowners speak with visitors, delivery drivers, or
+                                            service workers through the app. Compare speaker quality, noise handling,
+                                            quick replies, and app controls.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="service-tabs__panel-grid">
+                                    <div class="service-tabs__mini">
+                                        <strong>Talk feature</strong>
+                                        <span>Review mobile speaker and microphone quality.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Quick replies</strong>
+                                        <span>Ask whether preset visitor responses are included.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Audio alerts</strong>
+                                        <span>Compare notification and recording settings.</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="service-tabs__panel" data-service-panel="packages">
+                                <div class="service-tabs__panel-top">
+                                    <span class="service-tabs__panel-icon">
+                                        <i data-lucide="package-check" aria-hidden="true"></i>
+                                    </span>
+                                    <div>
+                                        <h3>Package detection</h3>
+                                        <p>
+                                            Package detection may help homeowners identify delivery activity near the
+                                            front door. Compare whether this feature is included, requires a
+                                            subscription, or depends on camera placement.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="service-tabs__panel-grid">
+                                    <div class="service-tabs__mini">
+                                        <strong>Delivery alerts</strong>
+                                        <span>Compare alerts for package drop-offs and pickup.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Camera placement</strong>
+                                        <span>Review whether the porch area is visible enough.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Plan requirements</strong>
+                                        <span>Ask if package detection needs a paid plan.</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="service-tabs__panel" data-service-panel="power">
+                                <div class="service-tabs__panel-top">
+                                    <span class="service-tabs__panel-icon">
+                                        <i data-lucide="battery-charging" aria-hidden="true"></i>
+                                    </span>
+                                    <div>
+                                        <h3>Power options</h3>
+                                        <p>
+                                            Video doorbells may be battery-powered, hardwired, or supported by existing
+                                            doorbell wiring. Compare installation requirements, charging needs,
+                                            transformer compatibility, and backup access.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="service-tabs__panel-grid">
+                                    <div class="service-tabs__mini">
+                                        <strong>Battery models</strong>
+                                        <span>Review charging frequency and low-battery alerts.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Hardwired models</strong>
+                                        <span>Ask about wiring and transformer compatibility.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Installation fit</strong>
+                                        <span>Compare DIY setup and provider-assisted options.</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="service-tabs__panel" data-service-panel="storage">
+                                <div class="service-tabs__panel-top">
+                                    <span class="service-tabs__panel-icon">
+                                        <i data-lucide="database" aria-hidden="true"></i>
+                                    </span>
+                                    <div>
+                                        <h3>Storage and app access</h3>
+                                        <p>
+                                            Doorbell video storage can include event clips, cloud history, local
+                                            storage, or snapshot alerts. Compare storage length, download access, app
+                                            usability, and user permissions.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="service-tabs__panel-grid">
+                                    <div class="service-tabs__mini">
+                                        <strong>Video history</strong>
+                                        <span>Compare how long clips are stored.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>Download access</strong>
+                                        <span>Review whether homeowners can save clips.</span>
+                                    </div>
+                                    <div class="service-tabs__mini">
+                                        <strong>User permissions</strong>
+                                        <span>Ask who can view or manage doorbell footage.</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="evaluation-section section section--light" aria-labelledby="evaluation-title">
+            <div class="container">
+                <div class="section-heading section-heading--center">
+                    <p class="section-kicker">Provider evaluation</p>
+                    <h2 id="evaluation-title">What to compare in video doorbell provider options.</h2>
+                    <p>
+                        Doorbell camera packages can differ by camera quality, storage terms, installation type, app
+                        access, detection features, contract terms, and support availability.
+                    </p>
+                </div>
+
+                <div class="evaluation-grid">
+                    <article class="evaluation-card">
+                        <i data-lucide="badge-dollar-sign" aria-hidden="true"></i>
+                        <h3>Pricing</h3>
+                        <p>Compare device cost, installation fees, storage plans, and possible subscription features.
+                        </p>
+                    </article>
+
+                    <article class="evaluation-card">
+                        <i data-lucide="package-check" aria-hidden="true"></i>
+                        <h3>Equipment</h3>
+                        <p>Review camera resolution, audio, field of view, power source, and package detection.</p>
+                    </article>
+
+                    <article class="evaluation-card">
+                        <i data-lucide="database" aria-hidden="true"></i>
+                        <h3>Storage terms</h3>
+                        <p>Compare cloud history, local storage, event clips, download access, and retention length.</p>
+                    </article>
+
+                    <article class="evaluation-card">
+                        <i data-lucide="wrench" aria-hidden="true"></i>
+                        <h3>Installation type</h3>
+                        <p>Review wired installation, battery setup, transformer needs, and doorbell placement.</p>
+                    </article>
+
+                    <article class="evaluation-card">
+                        <i data-lucide="file-clock" aria-hidden="true"></i>
+                        <h3>Contract length</h3>
+                        <p>Check whether storage or smart alerts depend on monthly or longer-term service plans.</p>
+                    </article>
+
+                    <article class="evaluation-card">
+                        <i data-lucide="smartphone" aria-hidden="true"></i>
+                        <h3>Mobile app</h3>
+                        <p>Compare live view, motion alerts, two-way audio, package alerts, and user permissions.</p>
+                    </article>
+
+                    <article class="evaluation-card">
+                        <i data-lucide="headphones" aria-hidden="true"></i>
+                        <h3>Support</h3>
+                        <p>Review provider support for setup, app troubleshooting, wiring questions, and service area.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-services section section--soft" aria-labelledby="related-services-title">
+            <div class="container">
+                <div class="related-services__top">
+                    <div class="section-heading">
+                        <p class="section-kicker">Related services</p>
+                        <h2 id="related-services-title">Compare other home security categories.</h2>
+                        <p>
+                            Video doorbells often connect with cameras, smart locks, alarms, monitoring plans, and
+                            access control.
+                        </p>
+                    </div>
+
+                    <div class="related-services__arrows" aria-label="Slider controls">
+                        <button class="slider__arrow" type="button" data-slider-prev
+                            aria-label="Previous related service">
+                            <i data-lucide="arrow-left" aria-hidden="true"></i>
+                        </button>
+
+                        <button class="slider__arrow" type="button" data-slider-next aria-label="Next related service">
+                            <i data-lucide="arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="slider" data-related-services-slider>
+                    <div class="slider__viewport" data-slider-viewport>
+                        <div class="slider__track" data-slider-track data-related-services-track></div>
+                    </div>
+
+                    <div class="slider__controls">
+                        <button class="slider__arrow" type="button" data-slider-prev
+                            aria-label="Previous related service">
+                            <i data-lucide="arrow-left" aria-hidden="true"></i>
+                        </button>
+
+                        <div class="slider__dots" data-slider-dots aria-label="Slider pagination"></div>
+
+                        <button class="slider__arrow" type="button" data-slider-next aria-label="Next related service">
+                            <i data-lucide="arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta service-final-cta section" aria-labelledby="service-final-title">
+            <div class="container">
+                <div class="final-cta__layout">
+                    <div>
+                        <div class="final-cta__icon" aria-hidden="true">
+                            <i data-lucide="door-open"></i>
+                        </div>
+
+                        <h2 id="service-final-title">Ready to compare video doorbell provider options?</h2>
+                        <p>
+                            Request video doorbell provider options based on your ZIP code, front-door visibility needs,
+                            storage preferences, and app access priorities.
+                        </p>
+                    </div>
+
+                    <div class="quote-box">
+                        <h3>Start with video doorbell comparison.</h3>
+                        <p>
+                            Compare live view, motion alerts, two-way audio, package detection, storage plans, power
+                            options, and app controls before choosing who to contact.
+                        </p>
+
+                        <div class="button-group">
+                            <a class="button button--primary" href="contact.html">
+                                Request Provider Options
+                                <i data-lucide="arrow-right" aria-hidden="true"></i>
+                            </a>
+
+                            <a class="button button--secondary-dark" href="#" data-config-href="phone">
+                                Call to Compare
+                                <i data-lucide="phone-call" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                        <div class="quote-box__notes">
+                            <span><i data-lucide="check" aria-hidden="true"></i>Fast</span>
+                            <span><i data-lucide="check" aria-hidden="true"></i>Free</span>
+                            <span><i data-lucide="check" aria-hidden="true"></i>No obligation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="container">
+                <div class="footer__grid">
+                    <div class="footer__col">
+                        <a class="brand brand--footer" href="index.html" aria-label="GUARDER homepage">
+                            <span class="alarm-logo" aria-hidden="true">
+                                <svg width="128" height="128" viewBox="0 0 128 128" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="alarm-logo-icon">
+                                    <defs>
+                                        <linearGradient id="alarmRingDoorbellFooter" x1="20" y1="16" x2="108" y2="112"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop offset="0%" stop-color="currentColor" />
+                                            <stop offset="100%" stop-color="currentColor" stop-opacity="0.72" />
+                                        </linearGradient>
+
+                                        <radialGradient id="alarmButtonDoorbellFooter" cx="0" cy="0" r="1"
+                                            gradientUnits="userSpaceOnUse"
+                                            gradientTransform="translate(51 43) rotate(52) scale(66 66)">
+                                            <stop offset="0%" stop-color="white" stop-opacity="0.34" />
+                                            <stop offset="18%" stop-color="currentColor" stop-opacity="0.96" />
+                                            <stop offset="100%" stop-color="currentColor" stop-opacity="0.82" />
+                                        </radialGradient>
+
+                                        <linearGradient id="alarmBaseDoorbellFooter" x1="64" y1="78" x2="64" y2="108"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop offset="0%" stop-color="#1A1A1F" />
+                                            <stop offset="100%" stop-color="#08080A" />
+                                        </linearGradient>
+                                    </defs>
+
+                                    <circle cx="64" cy="64" r="50" fill="url(#alarmRingDoorbellFooter)"
+                                        fill-opacity="0.08" />
+                                    <circle cx="64" cy="64" r="47.5" stroke="url(#alarmRingDoorbellFooter)"
+                                        stroke-width="5" />
+                                    <path
+                                        d="M38 79C38 73.4772 42.4772 69 48 69H80C85.5228 69 90 73.4772 90 79V88C90 94.6274 84.6274 100 78 100H50C43.3726 100 38 94.6274 38 88V79Z"
+                                        fill="url(#alarmBaseDoorbellFooter)" />
+                                    <circle cx="64" cy="58" r="28" fill="url(#alarmButtonDoorbellFooter)" />
+                                    <ellipse cx="55" cy="48" rx="11" ry="7" fill="white" fill-opacity="0.22" />
+                                    <circle cx="64" cy="58" r="10" fill="white" fill-opacity="0.16" stroke="white"
+                                        stroke-opacity="0.65" stroke-width="2.4" />
+                                    <circle cx="64" cy="58" r="3.2" fill="white" />
+                                    <path d="M52.5 46.5C55.5 43.8 59.5 42.2 64 42.2C68.5 42.2 72.5 43.8 75.5 46.5"
+                                        stroke="white" stroke-opacity="0.75" stroke-width="2.8"
+                                        stroke-linecap="round" />
+                                    <path d="M47 41C51.6 36.8 57.5 34.3 64 34.3C70.5 34.3 76.4 36.8 81 41"
+                                        stroke="white" stroke-opacity="0.42" stroke-width="2.8"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </span>
+
+                            <span class="brand__name" data-config="company.name">GUARDER</span>
+                        </a>
+
+                        <p class="footer__brand-text" data-config="footer.description">
+                            GUARDER is an independent home security comparison platform that helps homeowners explore
+                            local provider options for alarm systems, cameras, smart locks, monitoring, access control,
+                            and video doorbells.
+                        </p>
+
+                        <div class="footer__company">
+                            <span data-config="company.name">GUARDER</span>
+                            <span>Company ID: <span data-config="company.companyId">GRD-HS-4827</span></span>
+                            <span data-config="company.address">1846 Westlake Security Avenue, Austin, TX 78701,
+                                USA</span>
+                        </div>
+                    </div>
+
+                    <div class="footer__col">
+                        <h2 class="footer__title">Navigation</h2>
+
+                        <ul class="footer__links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h2 class="footer__title">Services</h2>
+
+                        <ul class="footer__links" data-service-list="footer">
+                            <li><a href="alarm-systems.html">Alarm Systems</a></li>
+                            <li><a href="security-cameras.html">Security Cameras</a></li>
+                            <li><a href="smart-locks.html">Smart Locks</a></li>
+                            <li><a href="home-monitoring.html">Home Monitoring</a></li>
+                            <li><a href="access-control.html">Access Control</a></li>
+                            <li><a href="video-doorbells.html">Video Doorbells</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h2 class="footer__title">Contact</h2>
+
+                        <div class="footer__contact">
+                            <div class="footer__contact-item">
+                                <i data-lucide="phone-call" aria-hidden="true"></i>
+                                <a href="#" data-config-href="phone" data-config="contact.phoneDisplay">(888)
+                                    555-0148</a>
+                            </div>
+
+                            <div class="footer__contact-item">
+                                <i data-lucide="mail" aria-hidden="true"></i>
+                                <a href="#" data-config-href="email"
+                                    data-config="contact.email">hello@guardercompare.com</a>
+                            </div>
+
+                            <div class="footer__contact-item">
+                                <i data-lucide="clock" aria-hidden="true"></i>
+                                <span data-config="contact.supportHours">Mon–Fri, 8:00 AM–7:00 PM</span>
+                            </div>
+
+                            <div class="footer__contact-item">
+                                <i data-lucide="map-pin" aria-hidden="true"></i>
+                                <span data-config="company.serviceArea">Independent home security provider comparison
+                                    across selected areas in the United States</span>
+                            </div>
+                        </div>
+
+                        <h2 class="footer__title">Legal</h2>
+
+                        <ul class="footer__links">
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                            <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                <p class="footer__disclaimer" data-config="footer.disclaimer">
+                    Disclaimer: This site is a free service to assist homeowners in connecting with local service
+                    providers. All contractors/providers are independent and this site does not warrant or guarantee any
+                    work performed. It is the responsibility of the homeowner to verify that the hired contractor
+                    furnishes the necessary license and insurance required for the work being performed. All persons
+                    depicted in a photo or video are actors or models and not contractors listed on this site.
+                </p>
+
+                <p class="footer__copy">
+                    © <span id="current-year">2026</span> <span data-config="company.name">GUARDER</span>. All rights
+                    reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js" defer></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/service-page.js" defer></script>
+</body>
+
+</html>

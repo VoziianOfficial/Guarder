@@ -1,0 +1,459 @@
+/* =========================
+   ABOUT HERO
+========================= */
+
+.about-hero {
+    min-height: 580px;
+    background:
+        radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
+        linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
+        url("../assets/images/family-security-dashboard.jpg") center / cover no-repeat;
+}
+
+.about-hero .page-hero__content {
+    max-width: 780px;
+}
+
+/* =========================
+   AGGREGATOR MODEL
+========================= */
+
+.about-model {
+    background:
+        linear-gradient(180deg, var(--color-white), var(--color-light));
+}
+
+.about-model__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(360px, 0.8fr);
+    align-items: center;
+    gap: 56px;
+}
+
+.about-model__panel {
+    position: relative;
+    min-height: 440px;
+    overflow: hidden;
+    background:
+        linear-gradient(180deg, rgba(5, 5, 5, 0.12), rgba(5, 5, 5, 0.82)),
+        url("../assets/images/security-panel.jpg") center / cover no-repeat;
+    border: 1px solid var(--color-border-light);
+    box-shadow: 0 28px 70px rgba(12, 12, 15, 0.16);
+}
+
+.about-model__panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 70% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
+        linear-gradient(180deg, transparent, rgba(5, 5, 5, 0.72));
+}
+
+.about-model__badge {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1;
+    padding: 22px;
+    background: rgba(5, 5, 5, 0.82);
+    border: 1px solid var(--color-border-dark);
+    backdrop-filter: blur(14px);
+}
+
+.about-model__badge svg {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 16px;
+    color: var(--color-accent);
+    stroke-width: 1.6;
+}
+
+.about-model__badge strong {
+    display: block;
+    color: var(--color-white);
+    font-size: 24px;
+    line-height: 1.08;
+    letter-spacing: -0.045em;
+    font-weight: 950;
+}
+
+.about-model__badge span {
+    display: block;
+    margin-top: 10px;
+    color: var(--color-text-soft);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.about-model__content {
+    display: grid;
+    gap: 18px;
+}
+
+.about-model__statement {
+    position: relative;
+    padding: 24px 24px 24px 28px;
+    background: var(--color-white);
+    border: 1px solid var(--color-border-light);
+    box-shadow: 0 18px 42px rgba(12, 12, 15, 0.08);
+}
+
+.about-model__statement::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 22px;
+    bottom: 22px;
+    width: 2px;
+    background: var(--color-accent);
+}
+
+.about-model__statement h3 {
+    color: var(--color-text-dark);
+    font-size: 22px;
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+    font-weight: 950;
+}
+
+.about-model__statement p {
+    margin-top: 10px;
+    color: var(--color-text-muted);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* =========================
+   HOW HELPS
+========================= */
+
+.about-help {
+    background:
+        linear-gradient(180deg, var(--color-light), var(--color-white));
+}
+
+.about-help__grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.help-card {
+    position: relative;
+    min-height: 240px;
+    padding: 24px;
+    overflow: hidden;
+    background: var(--color-white);
+    border: 1px solid var(--color-border-light);
+    box-shadow: 0 18px 42px rgba(12, 12, 15, 0.08);
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.help-card::after {
+    content: "";
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 0;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    background: var(--color-accent);
+    transition: transform var(--transition);
+}
+
+.help-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(229, 9, 20, 0.35);
+    box-shadow: 0 26px 58px rgba(12, 12, 15, 0.12);
+}
+
+.help-card:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.help-card svg {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 30px;
+    color: var(--color-accent);
+    stroke-width: 1.55;
+}
+
+.help-card h3 {
+    color: var(--color-text-dark);
+    font-size: 19px;
+    line-height: 1.12;
+    letter-spacing: -0.035em;
+    font-weight: 950;
+}
+
+.help-card p {
+    margin-top: 12px;
+    color: var(--color-text-muted);
+    font-size: 14px;
+    line-height: 1.62;
+}
+
+/* =========================
+   WHY COMPARISON MATTERS
+========================= */
+
+.about-compare {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 14% 28%, rgba(229, 9, 20, 0.18), transparent 34%),
+        linear-gradient(135deg, rgba(5, 5, 5, 0.96), rgba(17, 17, 20, 0.92)),
+        url("../assets/images/security-cameras.jpg") center / cover no-repeat;
+    color: var(--color-white);
+}
+
+.about-compare::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(5, 5, 5, 0.98), rgba(5, 5, 5, 0.72)),
+        repeating-linear-gradient(90deg,
+            rgba(255, 255, 255, 0.025) 0,
+            rgba(255, 255, 255, 0.025) 1px,
+            transparent 1px,
+            transparent 84px);
+    pointer-events: none;
+}
+
+.about-compare__layout {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 0.75fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 56px;
+}
+
+.about-compare__list {
+    display: grid;
+    gap: 14px;
+}
+
+.compare-row {
+    position: relative;
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 16px;
+    padding: 20px 20px 20px 0;
+    border-bottom: 1px solid var(--color-border-dark);
+}
+
+.compare-row::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    height: 1px;
+    background: var(--color-accent);
+    box-shadow: 0 0 16px rgba(229, 9, 20, 0.7);
+    transition: width var(--transition);
+}
+
+.compare-row:hover::before {
+    width: 100%;
+}
+
+.compare-row svg {
+    width: 34px;
+    height: 34px;
+    color: var(--color-accent);
+    stroke-width: 1.55;
+}
+
+.compare-row h3 {
+    color: var(--color-white);
+    font-size: 20px;
+    line-height: 1.12;
+    letter-spacing: -0.035em;
+    font-weight: 950;
+}
+
+.compare-row p {
+    margin-top: 8px;
+    color: var(--color-text-soft);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+/* =========================
+   VALUES
+========================= */
+
+.about-values {
+    background:
+        linear-gradient(180deg, var(--color-white), var(--color-light));
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.value-card {
+    position: relative;
+    min-height: 230px;
+    padding: 26px;
+    overflow: hidden;
+    background: var(--color-white);
+    border: 1px solid var(--color-border-light);
+    box-shadow: 0 18px 42px rgba(12, 12, 15, 0.08);
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.value-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 74px;
+    height: 2px;
+    background: var(--color-accent);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform var(--transition);
+}
+
+.value-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(229, 9, 20, 0.35);
+    box-shadow: 0 26px 58px rgba(12, 12, 15, 0.12);
+}
+
+.value-card:hover::before {
+    transform: scaleX(1);
+}
+
+.value-card svg {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 36px;
+    height: 36px;
+    color: var(--color-accent);
+    stroke-width: 1.55;
+}
+
+.value-card h3 {
+    max-width: 76%;
+    color: var(--color-text-dark);
+    font-size: 22px;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    font-weight: 950;
+}
+
+.value-card p {
+    margin-top: 18px;
+    color: var(--color-text-muted);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+/* =========================
+   ABOUT CTA
+========================= */
+
+.about-final-cta {
+    background:
+        radial-gradient(circle at 12% 28%, rgba(229, 9, 20, 0.22), transparent 34%),
+        linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.72)),
+        url("../assets/images/smart-home-app.jpg") center / cover no-repeat;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1180px) {
+    .about-help__grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .about-model__layout,
+    .about-compare__layout {
+        grid-template-columns: 1fr;
+        gap: 42px;
+    }
+
+    .about-model__panel {
+        min-height: 380px;
+    }
+
+    .about-help__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .about-hero {
+        min-height: 560px;
+        background:
+            radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
+            linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
+            url("../assets/images/family-security-dashboard.jpg") center / cover no-repeat;
+    }
+
+    .about-model__panel {
+        min-height: 350px;
+    }
+
+    .about-model__badge {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        padding: 18px;
+    }
+
+    .about-help__grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .help-card,
+    .value-card {
+        min-height: 190px;
+    }
+
+    .about-compare {
+        background:
+            radial-gradient(circle at 18% 24%, rgba(229, 9, 20, 0.18), transparent 34%),
+            linear-gradient(180deg, rgba(5, 5, 5, 0.98), rgba(5, 5, 5, 0.9)),
+            url("../assets/images/security-cameras.jpg") center / cover no-repeat;
+    }
+
+    .compare-row {
+        grid-template-columns: 36px 1fr;
+        gap: 12px;
+    }
+
+    .compare-row svg {
+        width: 28px;
+        height: 28px;
+    }
+}

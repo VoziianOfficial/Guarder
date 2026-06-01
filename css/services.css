@@ -1,0 +1,583 @@
+/* =========================
+   SERVICES HERO
+========================= */
+
+.services-hero {
+    min-height: 580px;
+    background:
+        radial-gradient(circle at 78% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
+        linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
+        url("../assets/images/security-panel.jpg") center / cover no-repeat;
+}
+
+.services-hero .page-hero__content {
+    max-width: 760px;
+}
+
+/* =========================
+   SERVICES SLIDER
+========================= */
+
+.services-main {
+    background:
+        linear-gradient(180deg, var(--color-light) 0%, var(--color-white) 100%);
+}
+
+.services-main__top {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: 28px;
+    margin-bottom: 38px;
+}
+
+.services-main__top .section-heading {
+    margin-bottom: 0;
+}
+
+.services-main__arrows {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.services-main .slider__controls {
+    display: none;
+}
+
+.services-main .service-card {
+    min-height: 410px;
+}
+
+/* =========================
+   ECOSYSTEM SECTION
+========================= */
+
+.services-ecosystem {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 76% 22%, rgba(229, 9, 20, 0.16), transparent 34%),
+        linear-gradient(135deg, #050505, #0B0B0D);
+    color: var(--color-white);
+}
+
+.services-ecosystem::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        repeating-linear-gradient(90deg,
+            rgba(255, 255, 255, 0.035) 0,
+            rgba(255, 255, 255, 0.035) 1px,
+            transparent 1px,
+            transparent 86px);
+    pointer-events: none;
+}
+
+.services-ecosystem__layout {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 0.75fr) minmax(420px, 1fr);
+    align-items: center;
+    gap: 58px;
+}
+
+.services-device {
+    position: relative;
+    min-height: 540px;
+}
+
+.services-device__center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 3;
+    width: 230px;
+    min-height: 360px;
+    padding: 18px;
+    transform: translate(-50%, -50%);
+    background:
+        linear-gradient(180deg, #18181C, #050505);
+    border: 1px solid var(--color-border-dark);
+    box-shadow: 0 34px 90px rgba(0, 0, 0, 0.44);
+}
+
+.services-device__screen {
+    min-height: 324px;
+    padding: 22px;
+    background:
+        radial-gradient(circle at 70% 20%, rgba(229, 9, 20, 0.24), transparent 32%),
+        linear-gradient(180deg, #111114, #08080A);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.services-device__screen h3 {
+    color: var(--color-white);
+    font-size: 26px;
+    line-height: 1.04;
+    letter-spacing: -0.045em;
+    font-weight: 950;
+}
+
+.services-device__screen p {
+    margin-top: 12px;
+    color: var(--color-text-soft);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.services-device__status {
+    display: grid;
+    gap: 8px;
+    margin-top: 28px;
+}
+
+.services-device__status span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 42px;
+    padding: 0 10px;
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--color-text-soft);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.services-device__status i {
+    width: 8px;
+    height: 8px;
+    background: var(--color-accent);
+    box-shadow: 0 0 16px rgba(229, 9, 20, 0.7);
+}
+
+.services-device__node {
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    align-items: center;
+    gap: 12px;
+    width: 230px;
+    padding: 16px;
+    background: rgba(24, 24, 28, 0.9);
+    border: 1px solid var(--color-border-dark);
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.34);
+    backdrop-filter: blur(12px);
+}
+
+.services-device__node svg {
+    width: 36px;
+    height: 36px;
+    color: var(--color-accent);
+    stroke-width: 1.55;
+}
+
+.services-device__node strong {
+    display: block;
+    color: var(--color-white);
+    font-size: 13px;
+    line-height: 1.15;
+    font-weight: 950;
+}
+
+.services-device__node span {
+    display: block;
+    margin-top: 3px;
+    color: var(--color-text-soft);
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+.services-device__node--one {
+    top: 22px;
+    left: 10px;
+}
+
+.services-device__node--two {
+    top: 156px;
+    right: 0;
+}
+
+.services-device__node--three {
+    bottom: 138px;
+    left: 0;
+}
+
+.services-device__node--four {
+    bottom: 26px;
+    right: 28px;
+}
+
+.services-device__line {
+    position: absolute;
+    z-index: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(229, 9, 20, 0.7), transparent);
+}
+
+.services-device__line::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 48%;
+    width: 7px;
+    height: 7px;
+    background: var(--color-accent);
+    box-shadow: 0 0 16px rgba(229, 9, 20, 0.82);
+    animation: servicesPulse 1.8s ease-in-out infinite;
+}
+
+.services-device__line--one {
+    width: 170px;
+    left: 178px;
+    top: 120px;
+    transform: rotate(22deg);
+}
+
+.services-device__line--two {
+    width: 154px;
+    right: 164px;
+    top: 214px;
+    transform: rotate(-15deg);
+}
+
+.services-device__line--three {
+    width: 168px;
+    left: 184px;
+    bottom: 196px;
+    transform: rotate(-22deg);
+}
+
+.services-device__line--four {
+    width: 148px;
+    right: 170px;
+    bottom: 138px;
+    transform: rotate(16deg);
+}
+
+@keyframes servicesPulse {
+
+    0%,
+    100% {
+        opacity: 0.35;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.32);
+    }
+}
+
+/* =========================
+   ALERT SECTION
+========================= */
+
+.alert-section {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 20% 28%, rgba(229, 9, 20, 0.2), transparent 34%),
+        linear-gradient(135deg, rgba(5, 5, 5, 0.96), rgba(17, 17, 20, 0.94)),
+        url("../assets/images/home-monitoring.jpg") center / cover no-repeat;
+    color: var(--color-white);
+}
+
+.alert-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.72)),
+        repeating-linear-gradient(0deg,
+            rgba(255, 255, 255, 0.025) 0,
+            rgba(255, 255, 255, 0.025) 1px,
+            transparent 1px,
+            transparent 74px);
+    pointer-events: none;
+}
+
+.alert-section__layout {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 54px;
+}
+
+.alert-line {
+    position: relative;
+    height: 2px;
+    margin: 30px 0;
+    background: linear-gradient(90deg, var(--color-accent), transparent);
+    box-shadow: 0 0 22px rgba(229, 9, 20, 0.7);
+}
+
+.alert-line::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background: var(--color-accent);
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.9);
+    animation: alertMove 2.4s linear infinite;
+}
+
+@keyframes alertMove {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: calc(100% - 12px);
+    }
+}
+
+.alert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.alert-card {
+    position: relative;
+    min-height: 150px;
+    padding: 22px;
+    background: rgba(24, 24, 28, 0.88);
+    border: 1px solid var(--color-border-dark);
+    overflow: hidden;
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        background var(--transition);
+}
+
+.alert-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--color-accent);
+    opacity: 0.75;
+}
+
+.alert-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(229, 9, 20, 0.52);
+    background: rgba(229, 9, 20, 0.08);
+}
+
+.alert-card svg {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 18px;
+    color: var(--color-accent);
+    stroke-width: 1.6;
+}
+
+.alert-card h3 {
+    color: var(--color-white);
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    font-weight: 900;
+}
+
+.alert-card p {
+    margin-top: 8px;
+    color: var(--color-text-soft);
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+/* =========================
+   FACTORS SECTION
+========================= */
+
+.factors-section {
+    background:
+        linear-gradient(180deg, var(--color-white), var(--color-light));
+}
+
+.factors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.factor-card {
+    position: relative;
+    min-height: 218px;
+    padding: 26px;
+    background: var(--color-white);
+    border: 1px solid var(--color-border-light);
+    box-shadow: 0 18px 42px rgba(12, 12, 15, 0.08);
+    overflow: hidden;
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.factor-card::after {
+    content: "";
+    position: absolute;
+    left: 26px;
+    right: 26px;
+    bottom: 0;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    background: var(--color-accent);
+    transition: transform var(--transition);
+}
+
+.factor-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(229, 9, 20, 0.34);
+    box-shadow: 0 26px 60px rgba(12, 12, 15, 0.12);
+}
+
+.factor-card:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.factor-card svg {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 36px;
+    height: 36px;
+    color: var(--color-accent);
+    stroke-width: 1.55;
+}
+
+.factor-card h3 {
+    max-width: 76%;
+    color: var(--color-text-dark);
+    font-size: 21px;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+    font-weight: 950;
+}
+
+.factor-card p {
+    margin-top: 16px;
+    color: var(--color-text-muted);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+/* =========================
+   SERVICES CTA
+========================= */
+
+.services-final-cta {
+    background:
+        radial-gradient(circle at 14% 28%, rgba(229, 9, 20, 0.22), transparent 34%),
+        linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.72)),
+        url("../assets/images/security-cameras.jpg") center / cover no-repeat;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1180px) {
+    .services-ecosystem__layout {
+        grid-template-columns: 1fr;
+    }
+
+    .services-device {
+        width: min(100%, 760px);
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .services-main__top {
+        grid-template-columns: 1fr;
+        align-items: start;
+    }
+
+    .services-main__arrows {
+        display: none;
+    }
+
+    .services-main .slider__controls {
+        display: flex;
+    }
+
+    .alert-section__layout {
+        grid-template-columns: 1fr;
+    }
+
+    .factors-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .services-hero {
+        min-height: 560px;
+        background:
+            radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
+            linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
+            url("../assets/images/security-panel.jpg") center / cover no-repeat;
+    }
+
+    .services-main .service-card {
+        min-height: 380px;
+    }
+
+    .services-device {
+        min-height: auto;
+        display: grid;
+        gap: 14px;
+    }
+
+    .services-device__center,
+    .services-device__node {
+        position: relative;
+        left: auto;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        width: 100%;
+        transform: none;
+    }
+
+    .services-device__center {
+        max-width: 260px;
+        margin-inline: auto;
+    }
+
+    .services-device__line {
+        display: none;
+    }
+
+    .alert-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .alert-card {
+        min-height: 140px;
+    }
+
+    .factors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .factor-card {
+        min-height: 190px;
+    }
+}
