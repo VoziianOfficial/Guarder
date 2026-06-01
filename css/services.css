@@ -1042,3 +1042,34 @@
         padding: 16px;
     }
 }
+
+/* =========================
+   SERVICES SECTIONS SPACING FIX
+========================= */
+
+.services-main.section,
+.services-ecosystem.section,
+.factors-section.section {
+    padding-top: 52px !important;
+    padding-bottom: 52px !important;
+}
+
+@media (max-width: 1024px) {
+
+    .services-main.section,
+    .services-ecosystem.section,
+    .factors-section.section {
+        padding-top: 42px !important;
+        padding-bottom: 42px !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .services-main.section,
+    .services-ecosystem.section,
+    .factors-section.section {
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+    }
+}
