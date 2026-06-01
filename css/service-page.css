@@ -911,3 +911,37 @@
         transform: translateY(-3px);
     }
 }
+
+/* =========================
+   SERVICE PAGE SECTIONS SPACING FIX
+========================= */
+
+.service-intro.section,
+.service-tabs-section.section,
+.evaluation-section.section,
+.related-services.section {
+    padding-top: 52px !important;
+    padding-bottom: 52px !important;
+}
+
+@media (max-width: 1024px) {
+
+    .service-intro.section,
+    .service-tabs-section.section,
+    .evaluation-section.section,
+    .related-services.section {
+        padding-top: 42px !important;
+        padding-bottom: 42px !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .service-intro.section,
+    .service-tabs-section.section,
+    .evaluation-section.section,
+    .related-services.section {
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+    }
+}
