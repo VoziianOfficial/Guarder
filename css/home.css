@@ -1734,3 +1734,27 @@
         transform: none !important;
     }
 }
+
+/* =========================
+   HOME TRUST BACKGROUND BRIGHTER
+========================= */
+
+.home-trust {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background:
+        linear-gradient(180deg,
+            rgba(247, 247, 248, 0.64) 0%,
+            rgba(255, 255, 255, 0.74) 100%),
+        var(--img-home-trust) center / cover no-repeat !important;
+}
+
+/* если у секции есть старый темный overlay через псевдоэлементы */
+.home-trust::before {
+    opacity: 0.18 !important;
+}
+
+.home-trust::after {
+    opacity: 0.12 !important;
+}
