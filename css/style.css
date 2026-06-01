@@ -2475,3 +2475,96 @@ body.page {
     filter:
         drop-shadow(0 0 10px rgba(0, 230, 118, 0.5)) drop-shadow(0 0 22px rgba(0, 230, 118, 0.32)) !important;
 }
+
+/* =========================
+   MOBILE MENU STRONG FIX
+========================= */
+
+.mobile-menu {
+    z-index: 99999 !important;
+    background:
+        radial-gradient(circle at 82% 18%, rgba(229, 9, 20, 0.28), transparent 34%),
+        rgba(0, 0, 0, 0.88) !important;
+    backdrop-filter: blur(14px);
+}
+
+.mobile-menu__panel {
+    position: relative;
+    width: min(100%, 430px) !important;
+    min-height: 100dvh;
+    background: #050505 !important;
+    color: var(--color-white);
+    box-shadow: -28px 0 80px rgba(0, 0, 0, 0.55);
+    z-index: 2;
+}
+
+.mobile-menu__top {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: #050505;
+    padding-top: 4px;
+}
+
+/* кнопка закрытия всегда видна */
+.mobile-menu__close {
+    position: relative;
+    z-index: 10;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 50px !important;
+    height: 50px !important;
+    flex: 0 0 50px;
+    border: 1px solid rgba(255, 255, 255, 0.28) !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: var(--color-white) !important;
+}
+
+/* рисуем крестик CSS-ом, даже если lucide не загрузился */
+.mobile-menu__close::before,
+.mobile-menu__close::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 999px;
+}
+
+.mobile-menu__close::before {
+    transform: rotate(45deg);
+}
+
+.mobile-menu__close::after {
+    transform: rotate(-45deg);
+}
+
+/* скрываем пустую/сломавшуюся lucide-иконку, чтобы не мешала */
+.mobile-menu__close i,
+.mobile-menu__close svg {
+    display: none !important;
+}
+
+.mobile-menu__close:hover {
+    background: var(--color-accent) !important;
+    border-color: var(--color-accent) !important;
+    transform: rotate(90deg);
+}
+
+/* на телефоне меню во всю ширину */
+@media (max-width: 767px) {
+    .mobile-menu {
+        justify-content: stretch !important;
+    }
+
+    .mobile-menu__panel {
+        width: 100% !important;
+        max-width: none !important;
+        border-left: 0 !important;
+    }
+
+    .mobile-menu__top {
+        padding-bottom: 18px;
+    }
+}

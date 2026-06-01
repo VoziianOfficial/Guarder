@@ -49,7 +49,7 @@ window.SITE_CONFIG = {
             slug: 'alarm-systems',
             url: 'alarm-systems.html',
             shortText: 'Compare alarm system packages, sensors, control panels, and alert options.',
-            image: 'assets/images/alarm-system.jpg',
+            image: '../assets/images/alarm-systems.jpg',
             icon: 'bell-ring'
         },
         {
