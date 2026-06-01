@@ -10,42 +10,48 @@
     background:
         radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        url("../assets/images/alarm-system.jpg") center / cover no-repeat;
+        /* Alarm Systems hero image */
+        var(--img-alarm-systems-hero) center / cover no-repeat;
 }
 
 .service-hero--security-cameras {
     background:
         radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        url("../assets/images/security-cameras.jpg") center / cover no-repeat;
+        /* Security Cameras hero image */
+        var(--img-security-cameras-hero) center / cover no-repeat;
 }
 
 .service-hero--smart-locks {
     background:
         radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        url("../assets/images/smart-lock.jpg") center / cover no-repeat;
+        /* Smart Locks hero image */
+        var(--img-smart-locks-hero) center / cover no-repeat;
 }
 
 .service-hero--home-monitoring {
     background:
         radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        url("../assets/images/home-monitoring.jpg") center / cover no-repeat;
+        /* Home Monitoring hero image */
+        var(--img-home-monitoring-hero) center / cover no-repeat;
 }
 
 .service-hero--access-control {
     background:
         radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        url("../assets/images/access-control.jpg") center / cover no-repeat;
+        /* Access Control hero image */
+        var(--img-access-control-hero) center / cover no-repeat;
 }
 
 .service-hero--video-doorbells {
     background:
         radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        url("../assets/images/video-doorbell.jpg") center / cover no-repeat;
+        /* Video Doorbells hero image */
+        var(--img-video-doorbells-hero) center / cover no-repeat;
 }
 
 .service-hero .page-hero__content {
@@ -112,7 +118,8 @@
     overflow: hidden;
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.08), rgba(5, 5, 5, 0.82)),
-        var(--service-intro-image, url("../assets/images/security-panel.jpg")) center / cover no-repeat;
+        /* Service intro image (per page modifier class) */
+        var(--service-intro-image, var(--img-alarm-systems-intro)) center / cover no-repeat;
     border: 1px solid var(--color-border-light);
     box-shadow: 0 28px 70px rgba(12, 12, 15, 0.16);
 }
@@ -163,27 +170,27 @@
 }
 
 .service-intro__media--alarm-systems {
-    --service-intro-image: url("../assets/images/alarm-system.jpg");
+    --service-intro-image: var(--img-alarm-systems-intro);
 }
 
 .service-intro__media--security-cameras {
-    --service-intro-image: url("../assets/images/security-cameras.jpg");
+    --service-intro-image: var(--img-security-cameras-intro);
 }
 
 .service-intro__media--smart-locks {
-    --service-intro-image: url("../assets/images/smart-lock.jpg");
+    --service-intro-image: var(--img-smart-locks-intro);
 }
 
 .service-intro__media--home-monitoring {
-    --service-intro-image: url("../assets/images/home-monitoring.jpg");
+    --service-intro-image: var(--img-home-monitoring-intro);
 }
 
 .service-intro__media--access-control {
-    --service-intro-image: url("../assets/images/access-control.jpg");
+    --service-intro-image: var(--img-access-control-intro);
 }
 
 .service-intro__media--video-doorbells {
-    --service-intro-image: url("../assets/images/video-doorbell.jpg");
+    --service-intro-image: var(--img-video-doorbells-intro);
 }
 
 /* =========================
@@ -512,7 +519,8 @@
     background:
         radial-gradient(circle at 12% 28%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.72)),
-        url("../assets/images/home-security-cta.jpg") center / cover no-repeat;
+        /* Service pages CTA image */
+        var(--img-services-main) center / cover no-repeat;
 }
 
 /* =========================
@@ -582,42 +590,48 @@
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            url("../assets/images/alarm-system.jpg") center / cover no-repeat;
+            /* Alarm Systems hero image (mobile) */
+            var(--img-alarm-systems-hero) center / cover no-repeat;
     }
 
     .service-hero--security-cameras {
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            url("../assets/images/security-cameras.jpg") center / cover no-repeat;
+            /* Security Cameras hero image (mobile) */
+            var(--img-security-cameras-hero) center / cover no-repeat;
     }
 
     .service-hero--smart-locks {
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            url("../assets/images/smart-lock.jpg") center / cover no-repeat;
+            /* Smart Locks hero image (mobile) */
+            var(--img-smart-locks-hero) center / cover no-repeat;
     }
 
     .service-hero--home-monitoring {
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            url("../assets/images/home-monitoring.jpg") center / cover no-repeat;
+            /* Home Monitoring hero image (mobile) */
+            var(--img-home-monitoring-hero) center / cover no-repeat;
     }
 
     .service-hero--access-control {
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            url("../assets/images/access-control.jpg") center / cover no-repeat;
+            /* Access Control hero image (mobile) */
+            var(--img-access-control-hero) center / cover no-repeat;
     }
 
     .service-hero--video-doorbells {
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            url("../assets/images/video-doorbell.jpg") center / cover no-repeat;
+            /* Video Doorbells hero image (mobile) */
+            var(--img-video-doorbells-hero) center / cover no-repeat;
     }
 
     .service-intro__media {
@@ -970,11 +984,18 @@
     position: relative;
     min-height: 390px;
     background:
-        linear-gradient(90deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.34)),
-        url("../assets/images/video-doorbell.jpg") center / cover no-repeat;
+        /* Default setup section background for non-doorbell pages */
+        linear-gradient(90deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.34));
     border: 1px solid var(--color-border-light);
     box-shadow: 0 24px 64px rgba(12, 12, 15, 0.12);
     overflow: hidden;
+}
+
+/* Video Doorbells setup image (must be used only on video-doorbells page) */
+body[data-service="video-doorbells"] .doorbell-setup__image {
+    background:
+        linear-gradient(90deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.34)),
+        var(--img-video-doorbells-setup) center / cover no-repeat;
 }
 
 .doorbell-setup__image::before {

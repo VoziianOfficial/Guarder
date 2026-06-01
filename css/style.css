@@ -38,6 +38,49 @@
     --header-height: 78px;
     --transition: 220ms ease;
     --font-main: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    /* Project image system */
+    --img-home-hero: url("../assets/images/home-hero-bg.jpg");
+    --img-home-why-compare: url("../assets/images/home-why-compare.jpg");
+    --img-home-ecosystem: url("../assets/images/home-ecosystem.jpg");
+    --img-home-trust: url("../assets/images/home-trust.jpg");
+    --img-home-cta: url("../assets/images/home-cta-bg.jpg");
+
+    --img-services-hero: url("../assets/images/services-hero-bg.jpg");
+    --img-services-ecosystem: url("../assets/images/services-ecosystem.jpg");
+    --img-services-main: url("../assets/images/services-main-bg.jpg");
+
+    --img-service-card-alarm: url("../assets/images/service-card-alarm-system.jpg");
+    --img-service-card-cameras: url("../assets/images/service-card-security-cameras.jpg");
+    --img-service-card-locks: url("../assets/images/service-card-smart-locks.jpg");
+    --img-service-card-monitoring: url("../assets/images/service-card-home-monitoring.jpg");
+    --img-service-card-access: url("../assets/images/service-card-access-control.jpg");
+    --img-service-card-doorbell: url("../assets/images/service-card-video-doorbell.jpg");
+
+    --img-alarm-systems-hero: url("../assets/images/hero-1.jpg");
+    --img-alarm-systems-intro: url("../assets/images/alarm-systems-intro.jpg");
+    --img-security-cameras-hero: url("../assets/images/hero-2.jpg");
+    --img-security-cameras-intro: url("../assets/images/security-cameras-intro.jpg");
+    --img-smart-locks-hero: url("../assets/images/hero-3.jpg");
+    --img-smart-locks-intro: url("../assets/images/smart-locks-intro.jpg");
+    --img-home-monitoring-hero: url("../assets/images/hero-4.jpg");
+    --img-home-monitoring-intro: url("../assets/images/home-monitoring-intro.jpg");
+    --img-access-control-hero: url("../assets/images/hero-5.jpg");
+    --img-access-control-intro: url("../assets/images/access-control-intro.jpg");
+    --img-video-doorbells-hero: url("../assets/images/hero-6.jpg");
+    --img-video-doorbells-intro: url("../assets/images/video-doorbells-intro.jpg");
+    --img-video-doorbells-setup: url("../assets/images/video-doorbells-setup.jpg");
+
+    --img-about-hero: url("../assets/images/about-hero-bg.jpg");
+    --img-about-model: url("../assets/images/about-model.jpg");
+    --img-about-compare: url("../assets/images/about-compare.jpg");
+    --img-about-values: url("../assets/images/about-values.jpg");
+
+    --img-contact-hero: url("../assets/images/contact-hero-bg.jpg");
+    --img-contact-form-side: url("../assets/images/contact-form-side.jpg");
+    --img-contact-cta: url("../assets/images/contact-cta-bg.jpg");
+
+    --img-legal-hero: url("../assets/images/legal-hero-bg.jpg");
 }
 
 /* =========================
@@ -908,7 +951,8 @@ main {
     background:
         radial-gradient(circle at 75% 20%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(135deg, rgba(5, 5, 5, 0.92), rgba(17, 17, 20, 0.84)),
-        url("../assets/images/home-security-hero.jpg") center / cover no-repeat;
+        /* Home page hero image */
+        var(--img-home-hero) center / cover no-repeat;
     color: var(--color-white);
 }
 
@@ -1136,7 +1180,8 @@ main {
     z-index: -2;
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.88)),
-        var(--service-image, url("../assets/images/security-cameras.jpg")) center / cover no-repeat;
+        /* Default service card image */
+        var(--service-image, var(--img-service-card-cameras)) center / cover no-repeat;
     transition: transform 600ms ease;
 }
 
@@ -1542,7 +1587,8 @@ main {
     background:
         radial-gradient(circle at 18% 30%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(135deg, rgba(5, 5, 5, 0.94), rgba(5, 5, 5, 0.7)),
-        url("../assets/images/home-security-hero.jpg") center / cover no-repeat;
+        /* Shared CTA image */
+        var(--img-home-cta) center / cover no-repeat;
     color: var(--color-white);
 }
 
@@ -2369,37 +2415,43 @@ main {
 .service-card--alarm-systems::before {
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.88)),
-        url("../assets/images/alarm-system.jpg") center / cover no-repeat;
+        /* Alarm Systems service card image */
+        var(--img-service-card-alarm) center / cover no-repeat;
 }
 
 .service-card--security-cameras::before {
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.88)),
-        url("../assets/images/security-cameras.jpg") center / cover no-repeat;
+        /* Security Cameras service card image */
+        var(--img-service-card-cameras) center / cover no-repeat;
 }
 
 .service-card--smart-locks::before {
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.88)),
-        url("../assets/images/smart-lock.jpg") center / cover no-repeat;
+        /* Smart Locks service card image */
+        var(--img-service-card-locks) center / cover no-repeat;
 }
 
 .service-card--home-monitoring::before {
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.88)),
-        url("../assets/images/home-monitoring.jpg") center / cover no-repeat;
+        /* Home Monitoring service card image */
+        var(--img-service-card-monitoring) center / cover no-repeat;
 }
 
 .service-card--access-control::before {
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.88)),
-        url("../assets/images/access-control.jpg") center / cover no-repeat;
+        /* Access Control service card image */
+        var(--img-service-card-access) center / cover no-repeat;
 }
 
 .service-card--video-doorbells::before {
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.88)),
-        url("../assets/images/video-doorbell.jpg") center / cover no-repeat;
+        /* Video Doorbells service card image */
+        var(--img-service-card-doorbell) center / cover no-repeat;
 }
 
 .slider__arrow,
@@ -2567,4 +2619,181 @@ body.page {
     .mobile-menu__top {
         padding-bottom: 18px;
     }
+}
+
+/* =========================
+   CLEAN HERO BLACK OVERLAY
+   без красного градиента
+========================= */
+
+/* Главный общий hero */
+.hero,
+.page-hero {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.78) 0%,
+            rgba(8, 8, 10, 0.58) 48%,
+            rgba(10, 10, 12, 0.36) 100%),
+        url("../assets/images/home-hero-bg.jpg") center / cover no-repeat !important;
+}
+
+/* Home hero */
+.home-hero {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.78) 0%,
+            rgba(8, 8, 10, 0.58) 48%,
+            rgba(10, 10, 12, 0.36) 100%),
+        url("../assets/images/home-hero-bg.jpg") center / cover no-repeat !important;
+}
+
+/* Services page hero */
+.services-hero,
+.page-hero.services-hero {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.78) 0%,
+            rgba(8, 8, 10, 0.58) 48%,
+            rgba(10, 10, 12, 0.36) 100%),
+        url("../assets/images/services-hero-bg.jpg") center / cover no-repeat !important;
+}
+
+/* About hero */
+.about-hero,
+.page-hero.about-hero {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.78) 0%,
+            rgba(8, 8, 10, 0.58) 48%,
+            rgba(10, 10, 12, 0.36) 100%),
+        url("../assets/images/about-hero-bg.jpg") center / cover no-repeat !important;
+}
+
+/* Contact hero */
+.contact-hero,
+.page-hero.contact-hero {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.78) 0%,
+            rgba(8, 8, 10, 0.58) 48%,
+            rgba(10, 10, 12, 0.36) 100%),
+        url("../assets/images/contact-hero-bg.jpg") center / cover no-repeat !important;
+}
+
+/* Legal hero */
+.legal-hero,
+.page-hero.legal-hero {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.78) 0%,
+            rgba(8, 8, 10, 0.58) 48%,
+            rgba(10, 10, 12, 0.36) 100%),
+        url("../assets/images/legal-hero-bg.jpg") center / cover no-repeat !important;
+}
+
+/* =========================
+   HERO TEXT READABILITY PLATE
+========================= */
+
+.page-hero__text,
+.hero__text {
+    display: inline-block;
+    width: fit-content;
+    max-width: 640px;
+    padding: 16px 18px;
+    background: rgba(5, 5, 5, 0.46);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 767px) {
+
+    .page-hero__text,
+    .hero__text {
+        width: 100%;
+        max-width: 100%;
+        padding: 14px 15px;
+        font-size: 15px;
+        line-height: 1.6;
+        background: rgba(5, 5, 5, 0.56);
+    }
+}/* =========================
+   SERVICE CARD TEXT READABILITY
+========================= */
+
+.service-card__text {
+    display: inline-block;
+    width: fit-content;
+    max-width: 92%;
+    padding: 10px 12px;
+    background: rgba(5, 5, 5, 0.48);
+    border-left: 2px solid var(--color-accent);
+    color: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+}
+
+.service-card:hover .service-card__text {
+    background: rgba(5, 5, 5, 0.58);
+    color: var(--color-white) !important;
+}
+
+/* =========================
+   SERVICE HERO = HOME SERVICES CARD IMAGES
+========================= */
+
+.service-hero--alarm-systems {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.78) 0%,
+            rgba(8, 8, 10, 0.58) 48%,
+            rgba(10, 10, 12, 0.36) 100%),
+        var(--img-service-card-alarm) center / cover no-repeat !important;
+}
+
+.service-hero--security-cameras {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.78) 0%,
+            rgba(8, 8, 10, 0.58) 48%,
+            rgba(10, 10, 12, 0.36) 100%),
+        var(--img-service-card-cameras) center / cover no-repeat !important;
+}
+
+.service-hero--smart-locks {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.78) 0%,
+            rgba(8, 8, 10, 0.58) 48%,
+            rgba(10, 10, 12, 0.36) 100%),
+        var(--img-service-card-locks) center / cover no-repeat !important;
+}
+
+.service-hero--home-monitoring {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.78) 0%,
+            rgba(8, 8, 10, 0.58) 48%,
+            rgba(10, 10, 12, 0.36) 100%),
+        var(--img-service-card-monitoring) center / cover no-repeat !important;
+}
+
+.service-hero--access-control {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.78) 0%,
+            rgba(8, 8, 10, 0.58) 48%,
+            rgba(10, 10, 12, 0.36) 100%),
+        var(--img-service-card-access) center / cover no-repeat !important;
+}
+
+.service-hero--video-doorbells {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.78) 0%,
+            rgba(8, 8, 10, 0.58) 48%,
+            rgba(10, 10, 12, 0.36) 100%),
+        var(--img-service-card-doorbell) center / cover no-repeat !important;
 }

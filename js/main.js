@@ -546,6 +546,66 @@
         }
     }
 
+    const PROJECT_IMAGES = [
+        'assets/images/home-hero-bg.jpg',
+        'assets/images/home-why-compare.jpg',
+        'assets/images/home-ecosystem.jpg',
+        'assets/images/home-trust.jpg',
+        'assets/images/home-cta-bg.jpg',
+
+        'assets/images/services-hero-bg.jpg',
+        'assets/images/services-ecosystem.jpg',
+        'assets/images/services-main-bg.jpg',
+
+        'assets/images/service-card-alarm-system.jpg',
+        'assets/images/service-card-security-cameras.jpg',
+        'assets/images/service-card-smart-locks.jpg',
+        'assets/images/service-card-home-monitoring.jpg',
+        'assets/images/service-card-access-control.jpg',
+        'assets/images/service-card-video-doorbell.jpg',
+
+        'assets/images/alarm-systems-hero.jpg',
+        'assets/images/alarm-systems-intro.jpg',
+        'assets/images/security-cameras-hero.jpg',
+        'assets/images/security-cameras-intro.jpg',
+        'assets/images/smart-locks-hero.jpg',
+        'assets/images/smart-locks-intro.jpg',
+        'assets/images/home-monitoring-hero.jpg',
+        'assets/images/home-monitoring-intro.jpg',
+        'assets/images/access-control-hero.jpg',
+        'assets/images/access-control-intro.jpg',
+        'assets/images/video-doorbells-hero.jpg',
+        'assets/images/video-doorbells-intro.jpg',
+        'assets/images/video-doorbells-setup.jpg',
+
+        'assets/images/about-hero-bg.jpg',
+        'assets/images/about-model.jpg',
+        'assets/images/about-compare.jpg',
+        'assets/images/about-values.jpg',
+
+        'assets/images/contact-hero-bg.jpg',
+        'assets/images/contact-form-side.jpg',
+        'assets/images/contact-cta-bg.jpg',
+
+        'assets/images/legal-hero-bg.jpg'
+    ];
+
+    function checkProjectImages() {
+        PROJECT_IMAGES.forEach((path) => {
+            const image = new Image();
+
+            image.onload = () => {
+                console.log(`✅ Image found: ${path}`);
+            };
+
+            image.onerror = () => {
+                console.error(`❌ Missing image: ${path}`);
+            };
+
+            image.src = path;
+        });
+    }
+
     /* =========================
    ZIP QUOTE FORM
 ========================= */
@@ -650,6 +710,7 @@
         initLucideIcons();
         initSkipLink();
         initCurrentYear();
+        checkProjectImages();
 
         document.documentElement.classList.add('site-ready');
     }

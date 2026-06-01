@@ -7,7 +7,8 @@
     background:
         radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        url("../assets/images/family-security-dashboard.jpg") center / cover no-repeat;
+        /* About page hero image */
+        var(--img-about-hero) center / cover no-repeat;
 }
 
 .about-hero .page-hero__content {
@@ -36,7 +37,8 @@
     overflow: hidden;
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.12), rgba(5, 5, 5, 0.82)),
-        url("../assets/images/family-security-dashboard.jpg") center / cover no-repeat;
+        /* About model section image */
+        var(--img-about-model) center / cover no-repeat;
     border: 1px solid var(--color-border-light);
     box-shadow: 0 28px 70px rgba(12, 12, 15, 0.16);
 }
@@ -211,7 +213,8 @@
     background:
         radial-gradient(circle at 14% 28%, rgba(229, 9, 20, 0.18), transparent 34%),
         linear-gradient(135deg, rgba(5, 5, 5, 0.96), rgba(17, 17, 20, 0.92)),
-        url("../assets/images/security-cameras.jpg") center / cover no-repeat;
+        /* About compare section image */
+        var(--img-about-compare) center / cover no-repeat;
     color: var(--color-white);
 }
 
@@ -296,7 +299,9 @@
 
 .about-values {
     background:
-        linear-gradient(180deg, var(--color-white), var(--color-light));
+        linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(247, 247, 248, 0.95)),
+        /* About values section image */
+        var(--img-about-values) center / cover no-repeat;
 }
 
 .values-grid {
@@ -376,7 +381,8 @@
     background:
         radial-gradient(circle at 12% 28%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.72)),
-        url("../assets/images/smart-home-app.jpg") center / cover no-repeat;
+        /* About page CTA image */
+        var(--img-about-values) center / cover no-repeat;
 }
 
 /* =========================
@@ -416,7 +422,8 @@
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            url("../assets/images/family-security-dashboard.jpg") center / cover no-repeat;
+            /* About page hero image (mobile) */
+            var(--img-about-hero) center / cover no-repeat;
     }
 
     .about-model__panel {
@@ -444,7 +451,8 @@
         background:
             radial-gradient(circle at 18% 24%, rgba(229, 9, 20, 0.18), transparent 34%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.98), rgba(5, 5, 5, 0.9)),
-            url("../assets/images/security-cameras.jpg") center / cover no-repeat;
+            /* About compare section image (mobile) */
+            var(--img-about-compare) center / cover no-repeat;
     }
 
     .compare-row {
@@ -481,7 +489,8 @@
     overflow: hidden;
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.04), rgba(5, 5, 5, 0.58)),
-        url("../assets/images/family-security-dashboard.jpg") center / cover no-repeat;
+        /* About model detailed image */
+        var(--img-about-model) center / cover no-repeat;
     border: 1px solid var(--color-border-light);
     box-shadow: 0 24px 64px rgba(12, 12, 15, 0.14);
 }

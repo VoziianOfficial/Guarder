@@ -7,7 +7,8 @@
     background:
         radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        url("../assets/images/security-panel.jpg") center / cover no-repeat;
+        /* Contact page hero image */
+        var(--img-contact-hero) center / cover no-repeat;
 }
 
 .contact-hero .page-hero__content {
@@ -130,7 +131,8 @@
     padding: 34px;
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.1), rgba(5, 5, 5, 0.82)),
-        url("../assets/images/smart-home-app.jpg") center / cover no-repeat;
+        /* Contact page side form image */
+        var(--img-contact-form-side) center / cover no-repeat;
     color: var(--color-white);
     border: 1px solid var(--color-border-light);
     box-shadow: 0 26px 70px rgba(12, 12, 15, 0.16);
@@ -351,7 +353,8 @@
     background:
         radial-gradient(circle at 15% 25%, rgba(229, 9, 20, 0.18), transparent 34%),
         linear-gradient(135deg, rgba(5, 5, 5, 0.96), rgba(17, 17, 20, 0.94)),
-        url("../assets/images/security-cameras.jpg") center / cover no-repeat;
+        /* Contact process image */
+        var(--img-contact-hero) center / cover no-repeat;
     color: var(--color-white);
 }
 
@@ -461,7 +464,8 @@
     background:
         radial-gradient(circle at 12% 28%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.72)),
-        url("../assets/images/home-security-cta.jpg") center / cover no-repeat;
+        /* Contact page CTA image */
+        var(--img-contact-cta) center / cover no-repeat;
 }
 
 /* =========================
@@ -509,7 +513,8 @@
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            url("../assets/images/security-panel.jpg") center / cover no-repeat;
+            /* Contact page hero image (mobile) */
+            var(--img-contact-hero) center / cover no-repeat;
     }
 
     .contact-options__grid {
@@ -723,4 +728,3 @@
         padding-bottom: 32px !important;
     }
 }
-

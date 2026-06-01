@@ -49,7 +49,7 @@ window.SITE_CONFIG = {
             slug: 'alarm-systems',
             url: 'alarm-systems.html',
             shortText: 'Compare alarm system packages, sensors, control panels, and alert options.',
-            image: '../assets/images/alarm-systems.jpg',
+            image: 'assets/images/service-card-alarm-system.jpg',
             icon: 'bell-ring'
         },
         {
@@ -57,7 +57,7 @@ window.SITE_CONFIG = {
             slug: 'security-cameras',
             url: 'security-cameras.html',
             shortText: 'Review indoor, outdoor, night vision, storage, and camera app options.',
-            image: 'assets/images/security-cameras.jpg',
+            image: 'assets/images/service-card-security-cameras.jpg',
             icon: 'cctv'
         },
         {
@@ -65,7 +65,7 @@ window.SITE_CONFIG = {
             slug: 'smart-locks',
             url: 'smart-locks.html',
             shortText: 'Explore keyless entry, app control, guest codes, and compatibility options.',
-            image: 'assets/images/smart-lock.jpg',
+            image: 'assets/images/service-card-smart-locks.jpg',
             icon: 'lock-keyhole'
         },
         {
@@ -73,7 +73,7 @@ window.SITE_CONFIG = {
             slug: 'home-monitoring',
             url: 'home-monitoring.html',
             shortText: 'Compare monitoring plans, emergency alerts, monthly costs, and contract terms.',
-            image: 'assets/images/home-monitoring.jpg',
+            image: 'assets/images/service-card-home-monitoring.jpg',
             icon: 'monitor-dot'
         },
         {
@@ -81,7 +81,7 @@ window.SITE_CONFIG = {
             slug: 'access-control',
             url: 'access-control.html',
             shortText: 'Review keypad, gate, entry management, and multi-user access options.',
-            image: 'assets/images/access-control.jpg',
+            image: 'assets/images/service-card-access-control.jpg',
             icon: 'panel-right-open'
         },
         {
@@ -89,7 +89,7 @@ window.SITE_CONFIG = {
             slug: 'video-doorbells',
             url: 'video-doorbells.html',
             shortText: 'Compare motion alerts, two-way audio, package monitoring, and app notifications.',
-            image: 'assets/images/video-doorbell.jpg',
+            image: 'assets/images/service-card-video-doorbell.jpg',
             icon: 'door-open'
         }
     ],

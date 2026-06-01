@@ -7,7 +7,8 @@
     background:
         radial-gradient(circle at 78% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        url("../assets/images/security-panel.jpg") center / cover no-repeat;
+        /* Services page hero image */
+        var(--img-services-hero) center / cover no-repeat;
 }
 
 .services-hero .page-hero__content {
@@ -20,7 +21,9 @@
 
 .services-main {
     background:
-        linear-gradient(180deg, var(--color-light) 0%, var(--color-white) 100%);
+        linear-gradient(180deg, rgba(247, 247, 248, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%),
+        /* Services page main section image */
+        var(--img-services-main) center / cover no-repeat;
 }
 
 .services-main__top {
@@ -282,7 +285,8 @@
     background:
         radial-gradient(circle at 20% 28%, rgba(229, 9, 20, 0.2), transparent 34%),
         linear-gradient(135deg, rgba(5, 5, 5, 0.96), rgba(17, 17, 20, 0.94)),
-        url("../assets/images/home-monitoring.jpg") center / cover no-repeat;
+        /* Services page support background image */
+        var(--img-services-main) center / cover no-repeat;
     color: var(--color-white);
 }
 
@@ -485,7 +489,8 @@
     background:
         radial-gradient(circle at 14% 28%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.72)),
-        url("../assets/images/security-cameras.jpg") center / cover no-repeat;
+        /* Services page CTA image */
+        var(--img-services-main) center / cover no-repeat;
 }
 
 /* =========================
@@ -532,7 +537,8 @@
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            url("../assets/images/security-panel.jpg") center / cover no-repeat;
+            /* Services page hero image (mobile) */
+            var(--img-services-hero) center / cover no-repeat;
     }
 
     .services-main .service-card {
@@ -706,7 +712,8 @@
     border-radius: 50%;
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.08), rgba(5, 5, 5, 0.48)),
-        url("../assets/images/family-security-dashboard.jpg") center / cover no-repeat;
+        /* Services ecosystem image */
+        var(--img-services-ecosystem) center / cover no-repeat;
     border: 8px solid var(--color-white);
     box-shadow:
         0 28px 80px rgba(12, 12, 15, 0.18),
