@@ -57,17 +57,17 @@
     --img-service-card-access: url("../assets/images/service-card-access-control.jpg");
     --img-service-card-doorbell: url("../assets/images/service-card-video-doorbell.jpg");
 
-    --img-alarm-systems-hero: url("../assets/images/hero-1.jpg");
+    
     --img-alarm-systems-intro: url("../assets/images/alarm-systems-intro.jpg");
-    --img-security-cameras-hero: url("../assets/images/hero-2.jpg");
+    
     --img-security-cameras-intro: url("../assets/images/security-cameras-intro.jpg");
-    --img-smart-locks-hero: url("../assets/images/hero-3.jpg");
+   
     --img-smart-locks-intro: url("../assets/images/smart-locks-intro.jpg");
-    --img-home-monitoring-hero: url("../assets/images/hero-4.jpg");
+   
     --img-home-monitoring-intro: url("../assets/images/home-monitoring-intro.jpg");
-    --img-access-control-hero: url("../assets/images/hero-5.jpg");
+   
     --img-access-control-intro: url("../assets/images/access-control-intro.jpg");
-    --img-video-doorbells-hero: url("../assets/images/hero-6.jpg");
+
     --img-video-doorbells-intro: url("../assets/images/video-doorbells-intro.jpg");
     --img-video-doorbells-setup: url("../assets/images/video-doorbells-setup.jpg");
 
@@ -81,6 +81,12 @@
     --img-contact-cta: url("../assets/images/contact-cta-bg.jpg");
 
     --img-legal-hero: url("../assets/images/legal-hero-bg.jpg");
+    --img-alarm-systems-hero: var(--img-service-card-alarm);
+        --img-security-cameras-hero: var(--img-service-card-cameras);
+        --img-smart-locks-hero: var(--img-service-card-locks);
+        --img-home-monitoring-hero: var(--img-service-card-monitoring);
+        --img-access-control-hero: var(--img-service-card-access);
+        --img-video-doorbells-hero: var(--img-service-card-doorbell);
 }
 
 /* =========================
@@ -2627,15 +2633,7 @@ body.page {
 ========================= */
 
 /* Главный общий hero */
-.hero,
-.page-hero {
-    background:
-        linear-gradient(90deg,
-            rgba(5, 5, 5, 0.78) 0%,
-            rgba(8, 8, 10, 0.58) 48%,
-            rgba(10, 10, 12, 0.36) 100%),
-        url("../assets/images/home-hero-bg.jpg") center / cover no-repeat !important;
-}
+
 
 /* Home hero */
 .home-hero {
