@@ -64,9 +64,9 @@
    
     --img-smart-locks-intro: url("../assets/images/smart-locks-intro.jpg");
    
-    --img-home-monitoring-intro: url("../assets/images/home-monitoring-intro.jpg");
+    --img-home-monitoring-intro: url("../assets/images/card-1.jpg");
    
-    --img-access-control-intro: url("../assets/images/access-control-intro.jpg");
+    --img-access-control-intro: url("../assets/images/card-2.jpg");
 
     --img-video-doorbells-intro: url("../assets/images/video-doorbells-intro.jpg");
     --img-video-doorbells-setup: url("../assets/images/video-doorbells-setup.jpg");
@@ -2736,4 +2736,3 @@ body.page {
     background: rgba(5, 5, 5, 0.58);
     color: var(--color-white) !important;
 }
-
