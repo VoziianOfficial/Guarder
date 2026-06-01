@@ -984,14 +984,42 @@
     position: relative;
     min-height: 390px;
     background:
-        /* Default setup section background for non-doorbell pages */
         linear-gradient(90deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.34));
     border: 1px solid var(--color-border-light);
     box-shadow: 0 24px 64px rgba(12, 12, 15, 0.12);
     overflow: hidden;
 }
 
-/* Video Doorbells setup image (must be used only on video-doorbells page) */
+body[data-service="alarm-systems"] .doorbell-setup__image {
+    background:
+        linear-gradient(90deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.34)),
+        var(--img-alarm-systems-hero) center / cover no-repeat;
+}
+
+body[data-service="security-cameras"] .doorbell-setup__image {
+    background:
+        linear-gradient(90deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.34)),
+        var(--img-security-cameras-hero) center / cover no-repeat;
+}
+
+body[data-service="smart-locks"] .doorbell-setup__image {
+    background:
+        linear-gradient(90deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.34)),
+        var(--img-smart-locks-hero) center / cover no-repeat;
+}
+
+body[data-service="home-monitoring"] .doorbell-setup__image {
+    background:
+        linear-gradient(90deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.34)),
+        var(--img-home-monitoring-hero) center / cover no-repeat;
+}
+
+body[data-service="access-control"] .doorbell-setup__image {
+    background:
+        linear-gradient(90deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.34)),
+        var(--img-access-control-hero) center / cover no-repeat;
+}
+
 body[data-service="video-doorbells"] .doorbell-setup__image {
     background:
         linear-gradient(90deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.34)),
