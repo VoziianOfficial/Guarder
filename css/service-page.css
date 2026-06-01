@@ -1160,3 +1160,61 @@ body[data-service="video-doorbells"] .doorbell-setup__image {
         font-size: 13px;
     }
 }
+/* =========================
+   SERVICE HERO CLEAN BLACK OVERLAY
+   без красного градиента
+========================= */
+
+.service-hero--alarm-systems {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.68) 0%,
+            rgba(8, 8, 10, 0.46) 48%,
+            rgba(10, 10, 12, 0.22) 100%),
+        var(--img-service-card-alarm) center / cover no-repeat !important;
+}
+
+.service-hero--security-cameras {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.68) 0%,
+            rgba(8, 8, 10, 0.46) 48%,
+            rgba(10, 10, 12, 0.22) 100%),
+        var(--img-service-card-cameras) center / cover no-repeat !important;
+}
+
+.service-hero--smart-locks {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.68) 0%,
+            rgba(8, 8, 10, 0.46) 48%,
+            rgba(10, 10, 12, 0.22) 100%),
+        var(--img-service-card-locks) center / cover no-repeat !important;
+}
+
+.service-hero--home-monitoring {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.68) 0%,
+            rgba(8, 8, 10, 0.46) 48%,
+            rgba(10, 10, 12, 0.22) 100%),
+        var(--img-service-card-monitoring) center / cover no-repeat !important;
+}
+
+.service-hero--access-control {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.68) 0%,
+            rgba(8, 8, 10, 0.46) 48%,
+            rgba(10, 10, 12, 0.22) 100%),
+        var(--img-service-card-access) center / cover no-repeat !important;
+}
+
+.service-hero--video-doorbells {
+    background:
+        linear-gradient(90deg,
+            rgba(5, 5, 5, 0.68) 0%,
+            rgba(8, 8, 10, 0.46) 48%,
+            rgba(10, 10, 12, 0.22) 100%),
+        var(--img-service-card-doorbell) center / cover no-repeat !important;
+}

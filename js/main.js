@@ -555,7 +555,7 @@
 
         'assets/images/services-hero-bg.jpg',
         'assets/images/services-ecosystem.jpg',
-        'assets/images/services-main-bg.jpg',
+        'assets/images/services-hero-bg.jpg',
 
         'assets/images/service-card-alarm-system.jpg',
         'assets/images/service-card-security-cameras.jpg',
@@ -564,28 +564,28 @@
         'assets/images/service-card-access-control.jpg',
         'assets/images/service-card-video-doorbell.jpg',
 
-        'assets/images/alarm-systems-hero.jpg',
+        'assets/images/service-card-home-monitoring.jpg',
         'assets/images/alarm-systems-intro.jpg',
-        'assets/images/security-cameras-hero.jpg',
         'assets/images/security-cameras-intro.jpg',
-        'assets/images/smart-locks-hero.jpg',
+        'assets/images/security-cameras-intro.jpg',
         'assets/images/smart-locks-intro.jpg',
-        'assets/images/home-monitoring-hero.jpg',
-        'assets/images/home-monitoring-intro.jpg',
-        'assets/images/access-control-hero.jpg',
-        'assets/images/access-control-intro.jpg',
+        'assets/images/smart-locks-intro.jpg',
+        'assets/images/card-1.jpg',
+        'assets/images/card-2.jpg',
+        'assets/images/card-1.jpg',
+        'assets/images/card-1.jpg',
         'assets/images/video-doorbells-hero.jpg',
         'assets/images/video-doorbells-intro.jpg',
         'assets/images/video-doorbells-setup.jpg',
 
         'assets/images/about-hero-bg.jpg',
         'assets/images/about-model.jpg',
-        'assets/images/about-compare.jpg',
-        'assets/images/about-values.jpg',
+        'assets/images/card-1.jpg',
+        'assets/images/card-2.jpg',
 
         'assets/images/contact-hero-bg.jpg',
         'assets/images/contact-form-side.jpg',
-        'assets/images/contact-cta-bg.jpg',
+        'assets/images/card-1.jpg',
 
         'assets/images/legal-hero-bg.jpg'
     ];
