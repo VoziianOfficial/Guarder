@@ -47,8 +47,10 @@
             this.root = root;
             this.track = root.querySelector('[data-slider-track]');
             this.viewport = root.querySelector('[data-slider-viewport]');
-            this.prevButtons = root.querySelectorAll('[data-slider-prev]');
-            this.nextButtons = root.querySelectorAll('[data-slider-next]');
+            this.scope = root.closest('section') || root;
+
+            this.prevButtons = this.scope.querySelectorAll('[data-slider-prev]');
+            this.nextButtons = this.scope.querySelectorAll('[data-slider-next]');
             this.dotsContainer = root.querySelector('[data-slider-dots]');
 
             if (!this.track || !this.viewport) return;
@@ -258,11 +260,17 @@
 
         bindEvents() {
             this.nextButtons.forEach((button) => {
-                button.addEventListener('click', () => this.next());
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    this.next();
+                });
             });
 
             this.prevButtons.forEach((button) => {
-                button.addEventListener('click', () => this.prev());
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    this.prev();
+                });
             });
 
             this.track.addEventListener('transitionend', () => this.handleTransitionEnd());

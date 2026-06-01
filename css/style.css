@@ -2401,3 +2401,21 @@ main {
         linear-gradient(180deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.88)),
         url("../assets/images/video-doorbell.jpg") center / cover no-repeat;
 }
+
+.slider__arrow,
+.home-services__arrows,
+.services-slider__arrows,
+.related-services__arrows {
+    position: relative;
+    z-index: 20;
+    pointer-events: auto;
+}
+
+.slider__viewport {
+    position: relative;
+    z-index: 1;
+}
+
+.slider__track {
+    pointer-events: auto;
+}
