@@ -1,13 +1,11 @@
-/* =========================
-   CONTACT HERO
-========================= */
+
 
 .contact-hero {
     min-height: 580px;
     background:
         radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        /* Contact page hero image */
+        
         var(--img-contact-hero) center / cover no-repeat;
 }
 
@@ -15,9 +13,7 @@
     max-width: 780px;
 }
 
-/* =========================
-   CONTACT OPTIONS
-========================= */
+
 
 .contact-options {
     background: var(--color-black);
@@ -108,9 +104,7 @@
     color: var(--color-white);
 }
 
-/* =========================
-   CONTACT FORM
-========================= */
+
 
 .contact-form-section {
     background:
@@ -131,7 +125,7 @@
     padding: 34px;
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.1), rgba(5, 5, 5, 0.82)),
-        /* Contact page side form image */
+        
         var(--img-contact-form-side) center / cover no-repeat;
     color: var(--color-white);
     border: 1px solid var(--color-border-light);
@@ -274,9 +268,7 @@
     line-height: 1.55;
 }
 
-/* =========================
-   CHECKLIST
-========================= */
+
 
 .contact-checklist {
     background:
@@ -343,9 +335,7 @@
     line-height: 1.45;
 }
 
-/* =========================
-   AFTER REQUEST
-========================= */
+
 
 .after-request {
     position: relative;
@@ -353,7 +343,7 @@
     background:
         radial-gradient(circle at 15% 25%, rgba(229, 9, 20, 0.18), transparent 34%),
         linear-gradient(135deg, rgba(5, 5, 5, 0.96), rgba(17, 17, 20, 0.94)),
-        /* Contact process image */
+        
         var(--img-contact-hero) center / cover no-repeat;
     color: var(--color-white);
 }
@@ -440,9 +430,7 @@
     line-height: 1.62;
 }
 
-/* =========================
-   CONTACT FAQ
-========================= */
+
 
 .contact-faq {
     background:
@@ -456,21 +444,17 @@
     gap: 48px;
 }
 
-/* =========================
-   CONTACT CTA
-========================= */
+
 
 .contact-final-cta {
     background:
         radial-gradient(circle at 12% 28%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.72)),
-        /* Contact page CTA image */
+        
         var(--img-contact-cta) center / cover no-repeat;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 
 @media (max-width: 1180px) {
     .contact-options__grid {
@@ -513,7 +497,7 @@
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            /* Contact page hero image (mobile) */
+            
             var(--img-contact-hero) center / cover no-repeat;
     }
 
@@ -590,9 +574,7 @@
     box-shadow: 0 0 0 4px rgba(229, 9, 20, 0.1);
 }
 
-/* =========================
-   CONTACT FORM COMPACT FIX
-========================= */
+
 
 .contact-form-card {
     padding: 28px !important;
@@ -638,7 +620,7 @@
     display: none !important;
 }
 
-/* Сообщение НЕ занимает место, пока текста нет */
+
 .contact-form__message {
     display: none !important;
     min-height: 0 !important;
@@ -649,7 +631,7 @@
     line-height: 1.4;
 }
 
-/* Показывается только когда JS добавит статус */
+
 .contact-form__message.is-error,
 .contact-form__message.is-success {
     display: block !important;
@@ -695,9 +677,7 @@
     }
 }
 
-/* =========================
-   CONTACT SECTIONS SPACING FIX
-========================= */
+
 
 .contact-form-section.section,
 .contact-checklist.section,

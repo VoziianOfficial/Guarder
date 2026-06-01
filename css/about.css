@@ -1,13 +1,11 @@
-/* =========================
-   ABOUT HERO
-========================= */
+
 
 .about-hero {
     min-height: 580px;
     background:
         radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        /* About page hero image */
+        
         var(--img-about-hero) center / cover no-repeat;
 }
 
@@ -15,9 +13,7 @@
     max-width: 780px;
 }
 
-/* =========================
-   AGGREGATOR MODEL
-========================= */
+
 
 .about-model {
     background:
@@ -37,7 +33,7 @@
     overflow: hidden;
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.12), rgba(5, 5, 5, 0.82)),
-        /* About model section image */
+        
         var(--img-about-model) center / cover no-repeat;
     border: 1px solid var(--color-border-light);
     box-shadow: 0 28px 70px rgba(12, 12, 15, 0.16);
@@ -127,9 +123,7 @@
     line-height: 1.7;
 }
 
-/* =========================
-   HOW HELPS
-========================= */
+
 
 .about-help {
     background:
@@ -203,9 +197,7 @@
     line-height: 1.62;
 }
 
-/* =========================
-   WHY COMPARISON MATTERS
-========================= */
+
 
 .about-compare {
     position: relative;
@@ -213,7 +205,7 @@
     background:
         radial-gradient(circle at 14% 28%, rgba(229, 9, 20, 0.18), transparent 34%),
         linear-gradient(135deg, rgba(5, 5, 5, 0.96), rgba(17, 17, 20, 0.92)),
-        /* About compare section image */
+        
         var(--img-about-compare) center / cover no-repeat;
     color: var(--color-white);
 }
@@ -293,14 +285,12 @@
     line-height: 1.65;
 }
 
-/* =========================
-   VALUES
-========================= */
+
 
 .about-values {
     background:
         linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(247, 247, 248, 0.95)),
-        /* About values section image */
+        
         var(--img-about-values) center / cover no-repeat;
 }
 
@@ -373,21 +363,17 @@
     line-height: 1.65;
 }
 
-/* =========================
-   ABOUT CTA
-========================= */
+
 
 .about-final-cta {
     background:
         radial-gradient(circle at 12% 28%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.72)),
-        /* About page CTA image */
+        
         var(--img-about-values) center / cover no-repeat;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 
 @media (max-width: 1180px) {
     .about-help__grid {
@@ -422,7 +408,7 @@
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            /* About page hero image (mobile) */
+            
             var(--img-about-hero) center / cover no-repeat;
     }
 
@@ -451,7 +437,7 @@
         background:
             radial-gradient(circle at 18% 24%, rgba(229, 9, 20, 0.18), transparent 34%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.98), rgba(5, 5, 5, 0.9)),
-            /* About compare section image (mobile) */
+            
             var(--img-about-compare) center / cover no-repeat;
     }
 
@@ -466,9 +452,7 @@
     }
 }
 
-/* =========================
-   ABOUT MODEL REDESIGN
-========================= */
+
 
 .about-model.section {
     padding-top: 56px !important;
@@ -489,7 +473,7 @@
     overflow: hidden;
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.04), rgba(5, 5, 5, 0.58)),
-        /* About model detailed image */
+        
         var(--img-about-model) center / cover no-repeat;
     border: 1px solid var(--color-border-light);
     box-shadow: 0 24px 64px rgba(12, 12, 15, 0.14);
@@ -610,7 +594,7 @@
     line-height: 1.55;
 }
 
-/* TABLET */
+
 @media (max-width: 1024px) {
     .about-model.section {
         padding-top: 42px !important;
@@ -642,7 +626,7 @@
     }
 }
 
-/* MOBILE */
+
 @media (max-width: 767px) {
     .about-model.section {
         padding-top: 32px !important;
@@ -693,9 +677,7 @@
     }
 }
 
-/* =========================
-   ABOUT HELP LINE REDESIGN
-========================= */
+
 
 .about-help.section {
     padding-top: 56px !important;
@@ -714,7 +696,7 @@
     margin-top: 44px;
 }
 
-/* главная горизонтальная линия */
+
 .about-help__line::before {
     content: "";
     position: absolute;
@@ -801,7 +783,7 @@
         0 0 0 8px rgba(229, 9, 20, 0.08);
 }
 
-/* TABLET */
+
 @media (max-width: 1024px) {
     .about-help.section {
         padding-top: 42px !important;
@@ -822,7 +804,7 @@
     }
 }
 
-/* MOBILE */
+
 @media (max-width: 767px) {
     .about-help.section {
         padding-top: 32px !important;
@@ -873,9 +855,7 @@
     }
 }
 
-/* =========================
-   ABOUT SECTIONS SPACING FIX
-========================= */
+
 
 .about-compare.section,
 .about-values.section {

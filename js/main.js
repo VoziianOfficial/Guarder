@@ -606,9 +606,7 @@
         });
     }
 
-    /* =========================
-   ZIP QUOTE FORM
-========================= */
+    
 
     (function () {
         function isValidZip(value) {

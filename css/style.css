@@ -1,30 +1,30 @@
 :root {
-    /* Main dark colors */
+    
     --color-black: #050505;
     --color-black-soft: #0B0B0D;
     --color-dark: #111114;
     --color-dark-card: #18181C;
 
-    /* Light colors */
+    
     --color-white: #FFFFFF;
     --color-light: #F7F7F8;
     --color-light-soft: #EFEFF1;
     --color-border-light: #E1E1E4;
 
-    /* Text colors */
+    
     --color-text-dark: #151518;
     --color-text-muted: #666672;
     --color-text-light: #FFFFFF;
     --color-text-soft: #C7C7CE;
 
-    /* Premium red accent */
+    
     --color-accent: #E50914;
     --color-accent-hover: #C90711;
     --color-accent-dark: #99070D;
     --color-accent-soft: #FFE6E8;
     --color-accent-glow: rgba(229, 9, 20, 0.32);
 
-    /* Extra */
+    
     --color-border-dark: rgba(255, 255, 255, 0.12);
     --color-shadow-dark: rgba(0, 0, 0, 0.45);
     --color-shadow-soft: rgba(12, 12, 15, 0.12);
@@ -39,7 +39,7 @@
     --transition: 220ms ease;
     --font-main: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
-    /* Project image system */
+    
     --img-home-hero: url("../assets/images/home-hero-bg.jpg");
     --img-home-why-compare: url("../assets/images/home-why-compare.jpg");
     --img-home-ecosystem: url("../assets/images/home-ecosystem.jpg");
@@ -89,9 +89,7 @@
         --img-video-doorbells-hero: var(--img-service-card-doorbell);
 }
 
-/* =========================
-   RESET / BASE
-========================= */
+
 
 *,
 *::before,
@@ -183,9 +181,7 @@ h6 {
     outline-offset: 4px;
 }
 
-/* =========================
-   ACCESSIBILITY
-========================= */
+
 
 .skip-link {
     position: fixed;
@@ -219,9 +215,7 @@ h6 {
     border: 0 !important;
 }
 
-/* =========================
-   LAYOUT
-========================= */
+
 
 .page {
     min-height: 100vh;
@@ -340,9 +334,7 @@ main {
     grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-/* =========================
-   BUTTONS
-========================= */
+
 
 .button {
     position: relative;
@@ -461,9 +453,7 @@ main {
     gap: 14px;
 }
 
-/* =========================
-   LOGO
-========================= */
+
 
 .alarm-logo {
     display: inline-flex;
@@ -514,9 +504,7 @@ main {
     height: 54px;
 }
 
-/* =========================
-   HEADER
-========================= */
+
 
 .header {
     position: sticky;
@@ -783,9 +771,7 @@ main {
     top: 7px;
 }
 
-/* =========================
-   MOBILE MENU
-========================= */
+
 
 .mobile-menu {
     position: fixed;
@@ -940,9 +926,7 @@ main {
     padding-top: 24px;
 }
 
-/* =========================
-   HERO BASE
-========================= */
+
 
 .page-hero,
 .hero {
@@ -956,7 +940,7 @@ main {
     background:
         radial-gradient(circle at 75% 20%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(135deg, rgba(5, 5, 5, 0.92), rgba(17, 17, 20, 0.84)),
-        /* Home page hero image */
+        
         var(--img-home-hero) center / cover no-repeat;
     color: var(--color-white);
 }
@@ -1063,9 +1047,7 @@ main {
     background: rgba(229, 9, 20, 0.08);
 }
 
-/* =========================
-   MARQUEE
-========================= */
+
 
 .security-marquee {
     position: relative;
@@ -1144,9 +1126,7 @@ main {
     }
 }
 
-/* =========================
-   CARDS
-========================= */
+
 
 .card {
     position: relative;
@@ -1185,7 +1165,7 @@ main {
     z-index: -2;
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.88)),
-        /* Default service card image */
+        
         var(--service-image, var(--img-service-card-cameras)) center / cover no-repeat;
     transition: transform 600ms ease;
 }
@@ -1390,9 +1370,7 @@ main {
     color: var(--color-text-soft);
 }
 
-/* =========================
-   SLIDER BASE
-========================= */
+
 
 .slider {
     position: relative;
@@ -1497,9 +1475,7 @@ main {
     background: var(--color-accent);
 }
 
-/* =========================
-   FAQ
-========================= */
+
 
 .faq {
     display: grid;
@@ -1581,9 +1557,7 @@ main {
     color: var(--color-text-soft);
 }
 
-/* =========================
-   FINAL CTA
-========================= */
+
 
 .final-cta {
     position: relative;
@@ -1592,7 +1566,7 @@ main {
     background:
         radial-gradient(circle at 18% 30%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(135deg, rgba(5, 5, 5, 0.94), rgba(5, 5, 5, 0.7)),
-        /* Shared CTA image */
+        
         var(--img-home-cta) center / cover no-repeat;
     color: var(--color-white);
 }
@@ -1698,9 +1672,7 @@ main {
     color: var(--color-accent);
 }
 
-/* =========================
-   FORMS BASE
-========================= */
+
 
 .form-field {
     display: grid;
@@ -1806,9 +1778,7 @@ main {
     box-shadow: 0 0 0 4px rgba(229, 9, 20, 0.14);
 }
 
-/* =========================
-   FOOTER
-========================= */
+
 
 .footer {
     background: var(--color-black);
@@ -1935,9 +1905,7 @@ main {
     text-align: center;
 }
 
-/* =========================
-   COOKIE BANNER
-========================= */
+
 
 .cookie-banner {
     position: fixed;
@@ -2008,9 +1976,7 @@ main {
     padding: 0 18px;
 }
 
-/* =========================
-   UTILS
-========================= */
+
 
 .red-line {
     width: 74px;
@@ -2039,9 +2005,7 @@ main {
     display: none;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 
 @media (max-width: 1180px) {
     .header__inner {
@@ -2397,9 +2361,7 @@ main {
     }
 }
 
-/* =========================
-   REDUCED MOTION
-========================= */
+
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -2420,42 +2382,42 @@ main {
 .service-card--alarm-systems::before {
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.88)),
-        /* Alarm Systems service card image */
+        
         var(--img-service-card-alarm) center / cover no-repeat;
 }
 
 .service-card--security-cameras::before {
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.88)),
-        /* Security Cameras service card image */
+        
         var(--img-service-card-cameras) center / cover no-repeat;
 }
 
 .service-card--smart-locks::before {
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.88)),
-        /* Smart Locks service card image */
+        
         var(--img-service-card-locks) center / cover no-repeat;
 }
 
 .service-card--home-monitoring::before {
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.88)),
-        /* Home Monitoring service card image */
+        
         var(--img-service-card-monitoring) center / cover no-repeat;
 }
 
 .service-card--access-control::before {
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.88)),
-        /* Access Control service card image */
+        
         var(--img-service-card-access) center / cover no-repeat;
 }
 
 .service-card--video-doorbells::before {
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.06), rgba(5, 5, 5, 0.88)),
-        /* Video Doorbells service card image */
+        
         var(--img-service-card-doorbell) center / cover no-repeat;
 }
 
@@ -2476,9 +2438,7 @@ main {
 .slider__track {
     pointer-events: auto;
 }
-/* =========================
-   FIXED STICKY HEADER FIX
-========================= */
+
 
 html {
     scroll-padding-top: calc(var(--header-height) + 16px);
@@ -2500,9 +2460,7 @@ body.page {
     scroll-margin-top: calc(var(--header-height) + 16px);
 }
 
-/* =========================
-   ZIP QUOTE FORM MESSAGE
-========================= */
+
 
 .quote-box__message {
     min-height: 22px;
@@ -2533,9 +2491,7 @@ body.page {
         drop-shadow(0 0 10px rgba(0, 230, 118, 0.5)) drop-shadow(0 0 22px rgba(0, 230, 118, 0.32)) !important;
 }
 
-/* =========================
-   MOBILE MENU STRONG FIX
-========================= */
+
 
 .mobile-menu {
     z-index: 99999 !important;
@@ -2563,7 +2519,7 @@ body.page {
     padding-top: 4px;
 }
 
-/* кнопка закрытия всегда видна */
+
 .mobile-menu__close {
     position: relative;
     z-index: 10;
@@ -2578,7 +2534,7 @@ body.page {
     color: var(--color-white) !important;
 }
 
-/* рисуем крестик CSS-ом, даже если lucide не загрузился */
+
 .mobile-menu__close::before,
 .mobile-menu__close::after {
     content: "";
@@ -2597,7 +2553,7 @@ body.page {
     transform: rotate(-45deg);
 }
 
-/* скрываем пустую/сломавшуюся lucide-иконку, чтобы не мешала */
+
 .mobile-menu__close i,
 .mobile-menu__close svg {
     display: none !important;
@@ -2609,7 +2565,7 @@ body.page {
     transform: rotate(90deg);
 }
 
-/* на телефоне меню во всю ширину */
+
 @media (max-width: 767px) {
     .mobile-menu {
         justify-content: stretch !important;
@@ -2626,15 +2582,12 @@ body.page {
     }
 }
 
-/* =========================
-   CLEAN HERO BLACK OVERLAY
-   без красного градиента
-========================= */
-
-/* Главный общий hero */
 
 
-/* Home hero */
+
+
+
+
 .home-hero {
     background:
         linear-gradient(90deg,
@@ -2644,7 +2597,7 @@ body.page {
         url("../assets/images/home-hero-bg.jpg") center / cover no-repeat !important;
 }
 
-/* Services page hero */
+
 .services-hero,
 .page-hero.services-hero {
     background:
@@ -2655,7 +2608,7 @@ body.page {
         url("../assets/images/services-hero-bg.jpg") center / cover no-repeat !important;
 }
 
-/* About hero */
+
 .about-hero,
 .page-hero.about-hero {
     background:
@@ -2666,7 +2619,7 @@ body.page {
         url("../assets/images/about-hero-bg.jpg") center / cover no-repeat !important;
 }
 
-/* Contact hero */
+
 .contact-hero,
 .page-hero.contact-hero {
     background:
@@ -2677,7 +2630,7 @@ body.page {
         url("../assets/images/contact-hero-bg.jpg") center / cover no-repeat !important;
 }
 
-/* Legal hero */
+
 .legal-hero,
 .page-hero.legal-hero {
     background:
@@ -2688,9 +2641,7 @@ body.page {
         url("../assets/images/contact-hero-bg.jpg") center / cover no-repeat !important;
 }
 
-/* =========================
-   HERO TEXT READABILITY PLATE
-========================= */
+
 
 .page-hero__text,
 .hero__text {
@@ -2716,9 +2667,7 @@ body.page {
         line-height: 1.6;
         background: rgba(5, 5, 5, 0.56);
     }
-}/* =========================
-   SERVICE CARD TEXT READABILITY
-========================= */
+}
 
 .service-card__text {
     display: inline-block;
@@ -2735,4 +2684,122 @@ body.page {
 .service-card:hover .service-card__text {
     background: rgba(5, 5, 5, 0.58);
     color: var(--color-white) !important;
+
+
+@media (max-width: 1024px) {
+
+    .hero,
+    .page-hero,
+    .service-hero,
+    .home-hero {
+        text-align: center !important;
+    }
+
+    .hero__content,
+    .page-hero__content,
+    .home-hero__content,
+    .service-hero .page-hero__content {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+    }
+
+    .hero__title,
+    .page-hero__title,
+    .home-hero .hero__title,
+    .service-hero .page-hero__title,
+    h1.hero__title,
+    h1.page-hero__title {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+    }
+
+    .hero__title span,
+    .page-hero__title span {
+        display: block;
+        text-align: center !important;
+    }
+
+    .hero__line,
+    .page-hero__line {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .hero__text,
+    .page-hero__text {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+    }
+
+    .hero .section-kicker,
+    .page-hero .section-kicker,
+    .service-hero .section-kicker,
+    .home-hero .section-kicker {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+
+    .section-heading,
+    .section-heading--center {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+    }
+
+    .section-heading h2,
+    .section-title,
+    h2 {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+    }
+
+    .section-heading p {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+    }
+
+    .section-kicker {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .section-kicker::before {
+        display: block !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .section-heading h2,
+    .section-title,
+    h2 {
+        font-size: clamp(28px, 8vw, 40px) !important;
+        line-height: 1.05 !important;
+        letter-spacing: -0.055em !important;
+        text-align: center !important;
+    }
+
+    .section-heading p {
+        max-width: 100% !important;
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+    }
 }

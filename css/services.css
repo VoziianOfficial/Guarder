@@ -1,13 +1,11 @@
-/* =========================
-   SERVICES HERO
-========================= */
+
 
 .services-hero {
     min-height: 580px;
     background:
         radial-gradient(circle at 78% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        /* Services page hero image */
+        
         var(--img-services-hero) center / cover no-repeat;
 }
 
@@ -15,14 +13,12 @@
     max-width: 760px;
 }
 
-/* =========================
-   SERVICES SLIDER
-========================= */
+
 
 .services-main {
     background:
         linear-gradient(180deg, rgba(247, 247, 248, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%),
-        /* Services page main section image */
+        
         var(--img-services-main) center / cover no-repeat;
 }
 
@@ -52,9 +48,7 @@
     min-height: 410px;
 }
 
-/* =========================
-   ECOSYSTEM SECTION
-========================= */
+
 
 .services-ecosystem {
     position: relative;
@@ -275,9 +269,7 @@
     }
 }
 
-/* =========================
-   ALERT SECTION
-========================= */
+
 
 .alert-section {
     position: relative;
@@ -285,7 +277,7 @@
     background:
         radial-gradient(circle at 20% 28%, rgba(229, 9, 20, 0.2), transparent 34%),
         linear-gradient(135deg, rgba(5, 5, 5, 0.96), rgba(17, 17, 20, 0.94)),
-        /* Services page support background image */
+        
         var(--img-services-main) center / cover no-repeat;
     color: var(--color-white);
 }
@@ -402,9 +394,7 @@
     line-height: 1.55;
 }
 
-/* =========================
-   FACTORS SECTION
-========================= */
+
 
 .factors-section {
     background:
@@ -481,21 +471,17 @@
     line-height: 1.65;
 }
 
-/* =========================
-   SERVICES CTA
-========================= */
+
 
 .services-final-cta {
     background:
         radial-gradient(circle at 14% 28%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.72)),
-        /* Services page CTA image */
+        
         var(--img-services-main) center / cover no-repeat;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 
 @media (max-width: 1180px) {
     .services-ecosystem__layout {
@@ -537,7 +523,7 @@
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            /* Services page hero image (mobile) */
+            
             var(--img-services-hero) center / cover no-repeat;
     }
 
@@ -588,9 +574,7 @@
     }
 }
 
-/* =========================
-   SERVICES ECOSYSTEM REDESIGN
-========================= */
+
 
 .services-ecosystem {
     position: relative;
@@ -712,7 +696,7 @@
     border-radius: 50%;
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.08), rgba(5, 5, 5, 0.48)),
-        /* Services ecosystem image */
+        
         var(--img-services-ecosystem) center / cover no-repeat;
     border: 8px solid var(--color-white);
     box-shadow:
@@ -762,7 +746,7 @@
     text-transform: uppercase;
 }
 
-/* TABLET */
+
 @media (max-width: 1180px) {
     .services-ecosystem__layout {
         grid-template-columns: minmax(0, 1fr) 300px;
@@ -782,7 +766,7 @@
     }
 }
 
-/* MOBILE / TABLET SMALL */
+
 @media (max-width: 900px) {
     .services-ecosystem__layout {
         grid-template-columns: 1fr;
@@ -819,7 +803,7 @@
     }
 }
 
-/* MOBILE */
+
 @media (max-width: 767px) {
     .services-ecosystem__card {
         grid-template-columns: 40px 1fr;
@@ -844,9 +828,7 @@
         padding: 0 12px;
     }
 }
-/* =========================
-   FACTORS CARDS COMPACT
-========================= */
+
 
 .factor-card {
     min-height: 125px !important;
@@ -900,18 +882,16 @@
     }
 }
 
-/* =========================
-   SERVICES ECOSYSTEM TABLET / MOBILE REDESIGN
-========================= */
 
-/* базово гарантируем, что фото всегда круг */
+
+
 .services-ecosystem__photo {
     aspect-ratio: 1 / 1 !important;
     border-radius: 50% !important;
     overflow: hidden !important;
 }
 
-/* TABLET */
+
 @media (max-width: 1024px) {
     .services-ecosystem.section {
         padding-top: 58px !important;
@@ -984,7 +964,7 @@
     }
 }
 
-/* MOBILE */
+
 @media (max-width: 767px) {
     .services-ecosystem.section {
         padding-top: 42px !important;
@@ -1039,7 +1019,7 @@
     }
 }
 
-/* SMALL MOBILE */
+
 @media (max-width: 420px) {
     .services-ecosystem__photo {
         width: min(88vw, 320px) !important;
@@ -1050,9 +1030,7 @@
     }
 }
 
-/* =========================
-   SERVICES SECTIONS SPACING FIX
-========================= */
+
 
 .services-main.section,
 .services-ecosystem.section,

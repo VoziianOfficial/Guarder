@@ -1,6 +1,4 @@
-/* =========================
-   SERVICE PAGE HERO
-========================= */
+
 
 .service-hero {
     min-height: 580px;
@@ -10,7 +8,7 @@
     background:
         radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        /* Alarm Systems hero image */
+        
         var(--img-alarm-systems-hero) center / cover no-repeat;
 }
 
@@ -18,7 +16,7 @@
     background:
         radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        /* Security Cameras hero image */
+        
         var(--img-security-cameras-hero) center / cover no-repeat;
 }
 
@@ -26,7 +24,7 @@
     background:
         radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        /* Smart Locks hero image */
+        
         var(--img-smart-locks-hero) center / cover no-repeat;
 }
 
@@ -34,7 +32,7 @@
     background:
         radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        /* Home Monitoring hero image */
+        
         var(--img-home-monitoring-hero) center / cover no-repeat;
 }
 
@@ -42,7 +40,7 @@
     background:
         radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        /* Access Control hero image */
+        
         var(--img-access-control-hero) center / cover no-repeat;
 }
 
@@ -50,7 +48,7 @@
     background:
         radial-gradient(circle at 76% 18%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.74)),
-        /* Video Doorbells hero image */
+        
         var(--img-video-doorbells-hero) center / cover no-repeat;
 }
 
@@ -58,9 +56,7 @@
     max-width: 800px;
 }
 
-/* =========================
-   SERVICE INTRO
-========================= */
+
 
 .service-intro {
     background:
@@ -118,7 +114,7 @@
     overflow: hidden;
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.08), rgba(5, 5, 5, 0.82)),
-        /* Service intro image (per page modifier class) */
+        
         var(--service-intro-image, var(--img-alarm-systems-intro)) center / cover no-repeat;
     border: 1px solid var(--color-border-light);
     box-shadow: 0 28px 70px rgba(12, 12, 15, 0.16);
@@ -193,9 +189,7 @@
     --service-intro-image: var(--img-video-doorbells-intro);
 }
 
-/* =========================
-   SERVICE TABS
-========================= */
+
 
 .service-tabs-section {
     position: relative;
@@ -384,9 +378,7 @@
     line-height: 1.5;
 }
 
-/* =========================
-   EVALUATION FACTORS
-========================= */
+
 
 .evaluation-section {
     background:
@@ -460,9 +452,7 @@
     line-height: 1.6;
 }
 
-/* =========================
-   RELATED SERVICES SLIDER
-========================= */
+
 
 .related-services {
     background:
@@ -495,9 +485,7 @@
     min-height: 395px;
 }
 
-/* =========================
-   SERVICE FAQ
-========================= */
+
 
 .service-faq {
     background:
@@ -511,21 +499,17 @@
     gap: 48px;
 }
 
-/* =========================
-   SERVICE CTA
-========================= */
+
 
 .service-final-cta {
     background:
         radial-gradient(circle at 12% 28%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.72)),
-        /* Service pages CTA image */
+        
         var(--img-services-main) center / cover no-repeat;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 
 @media (max-width: 1180px) {
     .evaluation-grid {
@@ -590,7 +574,7 @@
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            /* Alarm Systems hero image (mobile) */
+            
             var(--img-alarm-systems-hero) center / cover no-repeat;
     }
 
@@ -598,7 +582,7 @@
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            /* Security Cameras hero image (mobile) */
+            
             var(--img-security-cameras-hero) center / cover no-repeat;
     }
 
@@ -606,7 +590,7 @@
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            /* Smart Locks hero image (mobile) */
+            
             var(--img-smart-locks-hero) center / cover no-repeat;
     }
 
@@ -614,7 +598,7 @@
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            /* Home Monitoring hero image (mobile) */
+            
             var(--img-home-monitoring-hero) center / cover no-repeat;
     }
 
@@ -622,7 +606,7 @@
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            /* Access Control hero image (mobile) */
+            
             var(--img-access-control-hero) center / cover no-repeat;
     }
 
@@ -630,7 +614,7 @@
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.78)),
-            /* Video Doorbells hero image (mobile) */
+            
             var(--img-video-doorbells-hero) center / cover no-repeat;
     }
 
@@ -675,9 +659,7 @@
     }
 }
 
-/* =========================
-   EVALUATION SECTION LINE REDESIGN
-========================= */
+
 
 .evaluation-section {
     overflow: hidden;
@@ -691,7 +673,7 @@
     margin-top: 42px;
 }
 
-/* горизонтальная линия */
+
 .evaluation-line::before {
     content: "";
     position: absolute;
@@ -779,7 +761,7 @@
         0 0 0 8px rgba(229, 9, 20, 0.08);
 }
 
-/* TABLET */
+
 @media (max-width: 1024px) {
     .evaluation-line {
         grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -799,7 +781,7 @@
     }
 }
 
-/* MOBILE */
+
 @media (max-width: 767px) {
     .evaluation-line {
         grid-template-columns: 1fr;
@@ -843,9 +825,7 @@
     }
 }
 
-/* =========================
-   SERVICE INTRO NOTICE HOVERS ONLY
-========================= */
+
 
 .service-intro__content .service-intro__notice {
     position: relative;
@@ -923,9 +903,7 @@
     }
 }
 
-/* =========================
-   SERVICE PAGE SECTIONS SPACING FIX
-========================= */
+
 
 .service-intro.section,
 .service-tabs-section.section,
@@ -957,9 +935,7 @@
     }
 }
 
-/* =========================
-   DOORBELL SETUP SECTION
-========================= */
+
 
 .doorbell-setup {
     overflow: hidden;
@@ -1119,7 +1095,7 @@ body[data-service="video-doorbells"] .doorbell-setup__image {
     filter: drop-shadow(0 0 12px rgba(229, 9, 20, 0.34));
 }
 
-/* TABLET */
+
 @media (max-width: 1024px) {
     .doorbell-setup.section {
         padding-top: 42px !important;
@@ -1156,7 +1132,7 @@ body[data-service="video-doorbells"] .doorbell-setup__image {
     }
 }
 
-/* MOBILE */
+
 @media (max-width: 767px) {
     .doorbell-setup.section {
         padding-top: 32px !important;
@@ -1188,10 +1164,7 @@ body[data-service="video-doorbells"] .doorbell-setup__image {
         font-size: 13px;
     }
 }
-/* =========================
-   SERVICE HERO CLEAN BLACK OVERLAY
-   без красного градиента
-========================= */
+
 
 .service-hero--alarm-systems {
     background:

@@ -1,13 +1,11 @@
-/* =========================
-   HOME HERO
-========================= */
+
 
 .home-hero {
     min-height: calc(100vh - var(--header-height));
     background:
         radial-gradient(circle at 76% 20%, rgba(229, 9, 20, 0.2), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96) 0%, rgba(5, 5, 5, 0.78) 44%, rgba(5, 5, 5, 0.48) 100%),
-        /* Home page hero image */
+        
         var(--img-home-hero) center / cover no-repeat;
 }
 
@@ -39,7 +37,7 @@
     transform: translateY(-50%);
     background:
         linear-gradient(180deg, rgba(24, 24, 28, 0.9), rgba(8, 8, 10, 0.9)),
-        /* Home ecosystem image */
+        
         var(--img-home-ecosystem) center / cover no-repeat;
     border: 1px solid var(--color-border-dark);
     box-shadow: 0 30px 90px rgba(0, 0, 0, 0.46);
@@ -165,9 +163,7 @@
     line-height: 1.45;
 }
 
-/* =========================
-   HOME SERVICES
-========================= */
+
 
 .home-services {
     background:
@@ -200,9 +196,7 @@
     min-height: 395px;
 }
 
-/* =========================
-   WHY COMPARE
-========================= */
+
 
 .why-compare {
     position: relative;
@@ -210,7 +204,7 @@
     background:
         radial-gradient(circle at 18% 30%, rgba(229, 9, 20, 0.16), transparent 32%),
         linear-gradient(135deg, rgba(5, 5, 5, 0.98), rgba(10, 10, 12, 0.92)),
-        /* Home page "Why compare" image */
+        
         var(--img-home-why-compare) center / cover no-repeat;
 }
 
@@ -280,7 +274,7 @@
     border: 1px solid var(--color-border-dark);
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.08), rgba(5, 5, 5, 0.78)),
-        /* Home page "Why compare" media image */
+        
         var(--img-home-why-compare) center / cover no-repeat;
     box-shadow: 0 34px 90px rgba(0, 0, 0, 0.42);
     overflow: hidden;
@@ -321,14 +315,12 @@
     font-size: 14px;
 }
 
-/* =========================
-   ECOSYSTEM
-========================= */
+
 
 .home-ecosystem {
     background:
         linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 247, 248, 0.97)),
-        /* Home ecosystem section image */
+        
         var(--img-home-ecosystem) center / cover no-repeat;
     overflow: hidden;
 }
@@ -561,14 +553,12 @@
     }
 }
 
-/* =========================
-   TRUST / REVIEWS
-========================= */
+
 
 .home-trust {
     background:
         linear-gradient(180deg, rgba(247, 247, 248, 0.95), rgba(255, 255, 255, 0.95)),
-        /* Home trust section image */
+        
         var(--img-home-trust) center / cover no-repeat;
 }
 
@@ -653,21 +643,17 @@
     font-weight: 900;
 }
 
-/* =========================
-   HOME CTA OVERRIDES
-========================= */
+
 
 .home-final-cta {
     background:
         radial-gradient(circle at 12% 25%, rgba(229, 9, 20, 0.22), transparent 34%),
         linear-gradient(90deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.7)),
-        /* Home page CTA image */
+        
         var(--img-home-cta) center / cover no-repeat;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 
 @media (max-width: 1180px) {
     .home-hero__layout {
@@ -751,7 +737,7 @@
         background:
             radial-gradient(circle at 50% 12%, rgba(229, 9, 20, 0.18), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.94), rgba(5, 5, 5, 0.76)),
-            /* Home page hero image (mobile) */
+            
             var(--img-home-hero) center / cover no-repeat;
     }
 
@@ -798,7 +784,7 @@
         background:
             radial-gradient(circle at 18% 30%, rgba(229, 9, 20, 0.18), transparent 34%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.97), rgba(5, 5, 5, 0.9)),
-            /* Home page "Why compare" image (mobile) */
+            
             var(--img-home-why-compare) center / cover no-repeat;
     }
 
@@ -881,9 +867,7 @@
         width: 100%;
     }
 }
-/* =========================
-   HOME HERO COMPACT FIX
-========================= */
+
 
 .home-hero {
     min-height: 620px !important;
@@ -930,7 +914,7 @@
     white-space: nowrap;
 }
 
-/* на всякий случай, если старый visual где-то остался */
+
 .home-hero__visual {
     display: none !important;
 }
@@ -960,9 +944,7 @@
         margin-top: 24px;
     }
 }
-/* =========================
-   HOME HERO COMPACT FIX
-========================= */
+
 
 .home-hero {
     min-height: 540px !important;
@@ -1065,22 +1047,20 @@
         margin-top: 22px;
     }
 }
-/* =========================
-   HOME SECTION SPACING FIX
-========================= */
 
-/* why-compare: верхний padding в половину, нижний оставить как был */
+
+
 .why-compare.section {
     padding-top: 56px !important;
 }
 
-/* home-ecosystem: верхний и нижний padding в половину */
+
 .home-ecosystem.section {
     padding-top: 56px !important;
     padding-bottom: 56px !important;
 }
 
-/* home-trust: верхний padding в половину, нижний оставить как был */
+
 .home-trust.section {
     padding-top: 56px !important;
 }
@@ -1111,7 +1091,7 @@
     }
 }
 
-/* home-services: верхний и нижний padding в половину */
+
 .home-services.section {
     padding-top: 56px !important;
     padding-bottom: 56px !important;
@@ -1131,7 +1111,7 @@
     }
 }
 
-/* message НЕ занимает место, пока текста нет */
+
 .quote-box__message {
     display: none;
     min-height: 0 !important;
@@ -1141,7 +1121,7 @@
     line-height: 1.4;
 }
 
-/* появляется только когда JS добавил error/success */
+
 .quote-box__message.is-error,
 .quote-box__message.is-success {
     display: block;
@@ -1156,9 +1136,7 @@
     color: #2ecc71;
 }
 
-/* =========================
-   WHY COMPARE CARD HOVERS
-========================= */
+
 
 .why-compare__item {
     position: relative;
@@ -1254,9 +1232,7 @@
     }
 }
 
-/* =========================
-   WHY COMPARE MEDIA HEIGHT FIX
-========================= */
+
 
 .why-compare__layout {
     align-items: end;
@@ -1294,11 +1270,9 @@
     }
 }
 
-/* =========================
-   CENTER SECTION HEADINGS
-========================= */
 
-/* HOME SERVICES heading на всю ширину */
+
+
 .home-services__top {
     display: grid;
     grid-template-columns: 1fr !important;
@@ -1331,13 +1305,13 @@
 }
 
 
-/* WHY COMPARE heading на всю ширину над карточками и фото */
+
 .why-compare__layout {
     grid-template-columns: minmax(0, 0.82fr) minmax(360px, 0.9fr);
     align-items: end;
 }
 
-/* вытаскиваем section-heading на всю сетку */
+
 .why-compare__layout>div:first-child {
     display: contents;
 }
@@ -1371,7 +1345,7 @@
 }
 
 
-/* RESPONSIVE */
+
 @media (max-width: 1024px) {
     .why-compare__layout {
         grid-template-columns: 1fr;
@@ -1407,9 +1381,7 @@
     }
 }
 
-/* =========================
-   HOME HERO RESPONSIVE FIX
-========================= */
+
 
 .home-hero {
     min-height: 540px !important;
@@ -1473,9 +1445,7 @@
     display: none !important;
 }
 
-/* =========================
-   TABLET
-========================= */
+
 
 @media (max-width: 1024px) {
     .home-hero {
@@ -1484,7 +1454,7 @@
         background:
             radial-gradient(circle at 50% 14%, rgba(229, 9, 20, 0.2), transparent 36%),
             linear-gradient(180deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.76)),
-            /* Home page hero image (tablet) */
+            
             var(--img-home-hero) center / cover no-repeat;
     }
 
@@ -1513,9 +1483,7 @@
     }
 }
 
-/* =========================
-   MOBILE
-========================= */
+
 
 @media (max-width: 767px) {
     .home-hero {
@@ -1587,9 +1555,7 @@
     }
 }
 
-/* =========================
-   SMALL MOBILE
-========================= */
+
 
 @media (max-width: 420px) {
     .home-hero {
@@ -1610,9 +1576,7 @@
     }
 }
 
-/* =========================
-   HOME HERO MOBILE CONTAINER FIX
-========================= */
+
 
 .home-hero {
     width: 100%;
@@ -1638,13 +1602,13 @@
     max-width: 100%;
 }
 
-/* чтобы длинный заголовок не разрывал контейнер */
+
 .home-hero .hero__title {
     overflow-wrap: anywhere;
     word-break: normal;
 }
 
-/* кнопки не должны вылезать за контейнер */
+
 .home-hero .hero__actions {
     width: 100%;
 }
@@ -1653,7 +1617,7 @@
     max-width: 100%;
 }
 
-/* chips остаются в один ряд, но строго внутри контейнера */
+
 .home-hero .hero__chips {
     width: 100%;
     min-width: 0;
@@ -1662,16 +1626,14 @@
     overscroll-behavior-inline: contain;
 }
 
-/* сами chips не растягивают страницу */
+
 .home-hero .hero-chip {
     flex: 0 0 auto;
     max-width: max-content;
 }
-/* =========================
-   HOME SERVICES ARROWS ONLY DESKTOP
-========================= */
 
-/* DESKTOP: верхние стрелки слева/справа */
+
+
 @media (min-width: 1025px) {
     .home-services__top {
         position: relative;
@@ -1715,13 +1677,13 @@
         pointer-events: auto;
     }
 
-    /* нижние стрелки на десктопе скрыты */
+    
     .home-services .slider__controls {
         display: none !important;
     }
 }
 
-/* TABLET + MOBILE: верхние стрелки скрыты, нижние показаны */
+
 @media (max-width: 1024px) {
     .home-services__arrows {
         display: none !important;
@@ -1752,9 +1714,7 @@
     }
 }
 
-/* =========================
-   HOME TRUST BACKGROUND BRIGHTER
-========================= */
+
 
 .home-trust {
     position: relative;
@@ -1767,7 +1727,7 @@
         var(--img-home-trust) center / cover no-repeat !important;
 }
 
-/* если у секции есть старый темный overlay через псевдоэлементы */
+
 .home-trust::before {
     opacity: 0.18 !important;
 }
