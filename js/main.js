@@ -546,6 +546,97 @@
         }
     }
 
+    /* =========================
+   ZIP QUOTE FORM
+========================= */
+
+    (function () {
+        function isValidZip(value) {
+            return /^\d{5}(-\d{4})?$/.test(value);
+        }
+
+        function initZipQuoteForm() {
+            const forms = document.querySelectorAll('[data-zip-quote-form]');
+
+            if (!forms.length) return;
+
+            forms.forEach((form) => {
+                const input = form.querySelector('[name="zip"]');
+                const message = form.parentElement.querySelector('[data-form-message]');
+
+                if (!input) return;
+
+                form.addEventListener('submit', (event) => {
+                    event.preventDefault();
+
+                    const zip = input.value.trim();
+
+                    if (!isValidZip(zip)) {
+                        input.classList.add('is-invalid');
+
+                        if (message) {
+                            message.textContent = 'Please enter a valid ZIP code.';
+                            message.classList.remove('is-success');
+                            message.classList.add('is-error');
+                        }
+
+                        input.focus();
+                        return;
+                    }
+
+                    input.classList.remove('is-invalid');
+
+                    if (message) {
+                        message.textContent = 'Great. Redirecting you to the request form...';
+                        message.classList.remove('is-error');
+                        message.classList.add('is-success');
+                    }
+
+                    localStorage.setItem('guarderZipCode', zip);
+
+                    window.setTimeout(() => {
+                        window.location.href = `contact.html?zip=${encodeURIComponent(zip)}#contact-form`;
+                    }, 450);
+                });
+
+                input.addEventListener('input', () => {
+                    input.classList.remove('is-invalid');
+
+                    if (message) {
+                        message.textContent = '';
+                        message.classList.remove('is-error', 'is-success');
+                    }
+                });
+            });
+        }
+
+        function initContactZipPrefill() {
+            const params = new URLSearchParams(window.location.search);
+            const zipFromUrl = params.get('zip');
+            const zipFromStorage = localStorage.getItem('guarderZipCode');
+            const zip = zipFromUrl || zipFromStorage;
+
+            if (!zip) return;
+
+            const zipInput = document.querySelector('#zip, [name="zip"]');
+
+            if (zipInput && !zipInput.value) {
+                zipInput.value = zip;
+            }
+        }
+
+        function initZipFlow() {
+            initZipQuoteForm();
+            initContactZipPrefill();
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initZipFlow);
+        } else {
+            initZipFlow();
+        }
+    })();
+
     function initGlobalSite() {
         applySiteConfig();
         initHeaderScrollState();

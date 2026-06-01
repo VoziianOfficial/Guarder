@@ -2442,3 +2442,29 @@ body.page {
 [id] {
     scroll-margin-top: calc(var(--header-height) + 16px);
 }
+
+/* =========================
+   ZIP QUOTE FORM MESSAGE
+========================= */
+
+.quote-box__message {
+    min-height: 22px;
+    margin-top: 10px;
+    color: var(--color-text-soft);
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.quote-box__message.is-error {
+    color: var(--color-accent);
+}
+
+.quote-box__message.is-success {
+    color: #2ecc71;
+}
+
+.quote-box__form input.is-invalid {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 4px rgba(229, 9, 20, 0.14);
+}
