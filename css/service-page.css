@@ -300,7 +300,7 @@
 }
 
 .service-tabs__panel {
-    min-height: 430px;
+    min-height: 230px;
     padding: 34px;
     background:
         linear-gradient(180deg, rgba(24, 24, 28, 0.92), rgba(8, 8, 10, 0.94));
@@ -829,5 +829,85 @@
 
     .evaluation-point p {
         max-width: 100%;
+    }
+}
+
+/* =========================
+   SERVICE INTRO NOTICE HOVERS ONLY
+========================= */
+
+.service-intro__content .service-intro__notice {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--color-border-light);
+    box-shadow: 0 18px 42px rgba(12, 12, 15, 0.08);
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition),
+        background var(--transition);
+}
+
+.service-intro__content .service-intro__notice::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 0;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    background: var(--color-accent);
+    transition: transform var(--transition);
+}
+
+.service-intro__content .service-intro__notice::after {
+    content: "";
+    position: absolute;
+    top: -45%;
+    right: -28%;
+    width: 170px;
+    height: 170px;
+    background: radial-gradient(circle, rgba(229, 9, 20, 0.14), transparent 65%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition);
+}
+
+.service-intro__content .service-intro__notice:hover {
+    transform: translateY(-6px);
+    border-color: rgba(229, 9, 20, 0.36);
+    box-shadow: 0 24px 58px rgba(12, 12, 15, 0.14);
+    background: var(--color-white);
+}
+
+.service-intro__content .service-intro__notice:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.service-intro__content .service-intro__notice:hover::after {
+    opacity: 1;
+}
+
+.service-intro__content .service-intro__notice h3 {
+    transition: color var(--transition);
+}
+
+.service-intro__content .service-intro__notice:hover h3 {
+    color: var(--color-accent);
+}
+
+.service-intro__content .service-intro__notice p {
+    transition: color var(--transition);
+}
+
+.service-intro__content .service-intro__notice:hover p {
+    color: var(--color-text-dark);
+}
+
+@media (max-width: 767px) {
+    .service-intro__content .service-intro__notice:hover {
+        transform: translateY(-3px);
     }
 }
