@@ -585,6 +585,18 @@
     gap: 18px;
 }
 
+.home-trust__lead-card {
+    max-width: 560px;
+    margin-top: 14px;
+    padding: 12px 14px;
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.72);
+    box-shadow: 0 10px 24px rgba(12, 12, 15, 0.08);
+    color: var(--color-text-dark);
+    line-height: 1.7;
+    backdrop-filter: blur(4px);
+}
+
 .trust-card {
     position: relative;
     min-height: 210px;
@@ -847,6 +859,11 @@
     .trust-card {
         min-height: 190px;
         padding: 24px;
+    }
+
+    .home-trust__lead-card {
+        max-width: 100%;
+        padding: 10px 12px;
     }
 }
 
