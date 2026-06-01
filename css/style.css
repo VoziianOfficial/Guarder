@@ -73,14 +73,14 @@
 
     --img-about-hero: url("../assets/images/about-hero-bg.jpg");
     --img-about-model: url("../assets/images/about-model.jpg");
-    --img-about-compare: url("../assets/images/about-compare.jpg");
-    --img-about-values: url("../assets/images/about-values.jpg");
+    --img-about-compare: url("../assets/images/card-2.jpg");
+    --img-about-values: url("../assets/images/card-1.jpg");
 
     --img-contact-hero: url("../assets/images/contact-hero-bg.jpg");
     --img-contact-form-side: url("../assets/images/contact-form-side.jpg");
-    --img-contact-cta: url("../assets/images/contact-cta-bg.jpg");
+    --img-contact-cta: url("../assets/images/about-model.jpg");
 
-    --img-legal-hero: url("../assets/images/legal-hero-bg.jpg");
+    --img-legal-hero: url("../assets/images/card-1.jpg");
     --img-alarm-systems-hero: var(--img-service-card-alarm);
         --img-security-cameras-hero: var(--img-service-card-cameras);
         --img-smart-locks-hero: var(--img-service-card-locks);

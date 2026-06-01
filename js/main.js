@@ -587,7 +587,7 @@
         'assets/images/contact-form-side.jpg',
         'assets/images/card-1.jpg',
 
-        'assets/images/legal-hero-bg.jpg'
+        'assets/images/card-1.jpg',
     ];
 
     function checkProjectImages() {
